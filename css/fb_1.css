@@ -1,0 +1,340 @@
+/*
+HTTP Host: static.ak.fbcdn.net
+Generated: May 25th 2010 3:34:06 PM PDT
+Machine: 10.16.140.108
+Locale: nu_ll
+Path: css/2fgssmmgmw4k0w8c.pkg.css
+*/
+
+
+#fbcomcon .auto_resize_iframe{height:auto}
+#fbcomcon h1, h2, h3, h4, h5, h6{font-size:13px;color:#333;margin:0;padding:0}
+#fbcomcon h1{font-size:14px}
+#fbcomcon h4, h5{font-size:11px}
+#fbcomcon p{font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;text-align:left;margin:1em 0}
+#fbcomcon a{cursor:pointer;color:#3b5998;-moz-outline-style:none;text-decoration:none}
+#fbcomcon a:hover{text-decoration:underline}
+#fbcomcon img{border:0}
+#fbcomcon select{border:1px solid #bdc7d8;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;padding:2px}
+#fbcomcon td,
+#fbcomcon td.label{font-size:11px;text-align:left}
+#fbcomcon dd{color:#000}
+#fbcomcon dt{color:#777}
+#fbcomcon ul{list-style-type:none;margin:0;padding:0}
+#fbcomcon abbr{border-bottom:none}
+#fbcomcon .pipe{color:#808080;padding:0 3px}
+#fbcomcon .column{float:left}
+#fbcomcon .center{margin-left:auto;margin-right:auto}
+#fbcomcon #facebook .hidden_elem{display:none}
+#fbcomcon #facebook .invisible_elem{visibility:hidden}
+#fbcomcon #facebook .aural{width:0;height:0;display:block;margin-left:-5000px;overflow:hidden}
+#fbcomcon #content{width:auto;padding:0;margin:0}
+#fbcomcon .profile #content, .home #content, .search #content{min-height:600px}
+#fbcomcon .UIPage_LoggedOut .UIFullPage_Container{padding-top:26px}
+#fbcomcon .UIPage_LoggedOut .UIStandardFrame_Container{padding-top:26px}
+#fbcomcon .UIStandardFrame_Container{width:960px;padding:22px 0 0 20px;margin:0 auto}
+#fbcomcon .UIStandardFrame_Content{width:760px;float:left;margin:0;padding:0}
+#fbcomcon .UIStandardFrame_SidebarAds{width:200px;padding:0;margin:0;float:right}
+#fbcomcon .UIFullPage_Container{width:940px;padding:22px 12px 0 12px;margin:0 auto}
+#fbcomcon .UIInterstitialContainer{margin:0 auto 0 auto;padding:22px 150px 50px 150px}
+#fbcomcon .UIPage_LoggedOut .UIInterstitialContainer{padding:34px 150px 50px 150px}
+#fbcomcon .empty_message{font-size:13px;line-height:17px;padding:20px 20px 50px 20px;text-align:center;background:#f7f7f7}
+#fbcomcon .clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+#fbcomcon .clearfix{display:block}
+#fbcomcon .ie6 .clearfix,
+#fbcomcon .ie7 .clearfix,
+#fbcomcon .ie8 .clearfix{zoom:1}
+#fbcomcon form{margin:0;padding:0}
+#fbcomcon label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
+#fbcomcon label input{font-weight:normal}
+#fbcomcon input + label{padding-left:1px;line-height:14px}
+#fbcomcon .formtable{margin:0}
+#fbcomcon .formtable td{border:none;margin:0;padding:3px 1px}
+#fbcomcon .formtable td.label{color:#666;font-weight:bold;padding-right:10px}
+#fbcomcon .formtable .tallrow{vertical-align:top}
+#fbcomcon .formbuttons{text-align:center;margin:10px 10px}
+#fbcomcon .formbuttons .inputsubmit, .formbuttons .inputbutton{margin:2px 4px}
+#fbcomcon textarea,
+#fbcomcon .inputtext,
+#fbcomcon .inputpassword{border:1px solid #bdc7d8;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;padding:3px}
+#fbcomcon .inputtext,
+#fbcomcon .inputpassword{margin:0;*margin:-1px 0;padding-bottom:4px}
+#fbcomcon .ff3.mac .inputtext,
+#fbcomcon .ff3.mac .inputpassword{padding-bottom:3px}
+#fbcomcon .inputradio{padding:0;margin:0 5px 0 0;vertical-align:middle}
+#fbcomcon .inputcheckbox{border:0;vertical-align:middle}
+#fbcomcon .inputbutton,
+#fbcomcon .inputsubmit{border-style:solid;border-width:1px;border-color:#d9dfea #0e1f5b #0e1f5b #d9dfea;background-color:#3b5998;color:#fff;padding:2px 15px 3px 15px;text-align:center;*width:1;*overflow:visible;*padding:2px 15px}
+#fbcomcon .inputsubmit_disabled{background-color:#999;border-bottom:1px solid #000;border-right:1px solid #666;color:#fff}
+#fbcomcon .inputaux{background:#f0f0f0;border-color:#e7e7e7 #666 #666 #e7e7e7;color:#000}
+#fbcomcon .inputaux_disabled{color:#999}
+#fbcomcon .inputsearch{background:#fff url(/rsrc.php/zA4IG/hash/cny9pytx.png) no-repeat left 4px;padding-left:17px}
+#fbcomcon .datawrap{word-wrap:break-word}
+#fbcomcon .word_break{display:block;float:left;float:none\9;*float:left;margin-left:-10px;padding:0}
+#fbcomcon .img_loading{position:absolute;left:-100000px;top:-100000px}
+#fbcomcon .two_column .right,
+#fbcomcon .two_column .left{float:left}
+#fbcomcon .no_padding{padding:0}
+#fbcomcon .see_all{text-align:right}
+#fbcomcon .standard_status_element{visibility:hidden}
+#fbcomcon .standard_status_element.async_saving{visibility:visible}
+#fbcomcon .findfriends_block{text-align:left;margin:auto}
+#fbcomcon .findfriends_block .findfriends_block_li{line-height:18px}
+#fbcomcon .clickable{cursor:pointer}
+#fbcomcon .aero{opacity:.5;filter:alpha(opacity=50)}
+#fbcomcon input.request_form_submit{background:#3B5998 url(/rsrc.php/zDIPV/hash/6s9bbe8i.gif) no-repeat 8px 6px;padding:3px 6px 3px 26px;*overflow:visible;*background-position:8px 5px;*padding:3px 6px 3px 30px}
+#fbcomcon img.tracking_pixel{height:1px;position:absolute;visibility:hidden;width:1px}
+#fbcomcon .fbsmid{display:none}
+#fbcomcon .DOMControl_placeholder{color:#777}
+#fbcomcon .no_js .DOMControl_placeholder{color:#000}
+#fbcomcon .DOMControl_shadow{position:absolute;left:-10000px;top:-10000px}
+#fbcomcon .DOMControl_autogrow{overflow:hidden}
+#fbcomcon .diagnostics{position:absolute;top:40px;left:10px;z-index:101;padding:10px;width:200px;border:1px solid #008;background:#dfdfff}
+#fbcomcon #dropmenu_container{display:block;height:0;margin:0 auto;padding:0;position:absolute;width:964px;z-index:105}
+#fbcomcon #locale_selector_dialog_onclick{direction:ltr;float:left;width:185px;padding:5px 5px 0 0}
+#fbcomcon #locale_selector_dialog_onclick .intl_selector_dialog_a{direction:ltr}
+#fbcomcon .direction_ltr{direction:ltr}
+#fbcomcon .direction_rtl{direction:rtl}
+#fbcomcon .text_align_ltr{text-align:left}
+#fbcomcon .text_align_rtl{text-align:right}
+#fbcomcon .transparent_png{_background-image:none;_display:inline;_zoom:1}
+#fbcomcon .invisible_png{_visibility:hidden}
+#fbcomcon .highlight, .inserted{_line-height:17px}
+#fbcomcon #jewelCase{left:97px;position:absolute;bottom:0;_bottom:-1px;width:84px}
+#fbcomcon #jewelCase .jewel{border:1px solid #3b5998;border-bottom:0;float:left;height:31px;margin:13px -1px 0 0;position:relative;width:24px}
+#fbcomcon #jewelCase .openToggler{border-color:#333;height:30px;margin-top:14px;z-index:2}
+#fbcomcon .jewelCount{background-color:#00376a;top:-2px;color:#fff;display:none;font-size:9px;font-weight:bold;padding-bottom:1px;position:absolute;right:-2px;z-index:3;-webkit-border-radius:2px;-moz-border-radius:2px}
+#fbcomcon .ff2 .jewelCount{-moz-border-radius:2px 4px 4px 1px}
+#fbcomcon .jewelCount span{background-color:#f03d25;border:1px solid #dd3822;border-top:0;display:block;padding:1px 2px 0 1px;-webkit-border-radius:2px;-moz-border-radius:2px}
+#fbcomcon .ff3 .jewelCount span{padding-right:1px}
+#fbcomcon .ff2 .jewelCount span{-moz-border-radius:2px 4px 4px 1px}
+#fbcomcon .jewelNew .jewelCount{display:block}
+#fbcomcon .jewelToggler{background:no-repeat url(/rsrc.php/z7VU4/hash/66ad7upf.png);display:inline-block;height:31px;position:absolute;text-decoration:none;width:24px}
+#fbcomcon .jewelToggler:active,
+#fbcomcon .jewelToggler:focus,
+#fbcomcon .jewelToggler:hover{outline:none;background-color:#4b67a1;text-decoration:none}
+#fbcomcon .openToggler .jewelToggler{background-color:#fff !important;z-index:3}
+#fbcomcon #jewelMail{background-position:-24px -73px}
+#fbcomcon #jewelMail:hover,
+#fbcomcon #jewelMail:focus,
+#fbcomcon #jewelMail:active{background-position:-51px -73px}
+#fbcomcon .jewelNew #jewelMail{background-position:-78px -73px}
+#fbcomcon .openToggler #jewelMail{background-position:-105px -74px !important}
+#fbcomcon #jewelRequest{background-position:-24px -105px}
+#fbcomcon #jewelRequest:hover,
+#fbcomcon #jewelRequest:focus,
+#fbcomcon #jewelRequest:active{background-position:-51px -105px}
+#fbcomcon #jewelRequestsContent .jewelRequest .jewelRequestContent{padding-top:5px}
+#fbcomcon #jewelRequestsContent .uiTextTitle{font-size:11px}
+#fbcomcon #jewelRequestsContent .requestLabel{line-height:12px}
+#fbcomcon .jewelNew #jewelRequest{background-position:-78px -105px}
+#fbcomcon .openToggler #jewelRequest{background-position:-105px -106px !important}
+#fbcomcon #jewelAlert{background-position:-24px -137px}
+#fbcomcon #jewelAlert:hover,
+#fbcomcon #jewelAlert:focus,
+#fbcomcon #jewelAlert:active{background-position:-51px -137px}
+#fbcomcon .jewelNew #jewelAlert{background-position:-78px -137px}
+#fbcomcon .openToggler #jewelAlert{background-position:-105px -138px !important}
+#fbcomcon #jewelCase .jewelBox{background-color:#fff;border:1px solid #333;border-bottom:2px solid #293e6a;display:none;left:-1px;overflow:hidden;position:absolute;top:29px;width:330px;z-index:2}
+#fbcomcon #jewelCase .openToggler .jewelBox{display:block}
+#fbcomcon #jewelCase li,
+#fbcomcon #jewelCase .empty{padding:4px 8px}
+#fbcomcon .jewelBox ul{padding:4px 0}
+#fbcomcon #jewelCase .jewelHeader{margin:7px 8px 0}
+#fbcomcon #jewelCase .jewelHeader a{position:relative;top:2px}
+#fbcomcon #jewelCase .jewelItemNew{background:#eff1f7}
+#fbcomcon #jewelCase .jewelItemResponded{background:#fff9d7}
+#fbcomcon #jewelCase .jewelLoading{display:block;margin:5px auto}
+#fbcomcon .jewelBox .profileImage{height:50px;width:50px}
+#fbcomcon .jewelBox .messageRowExternalPic .profileImage{background-color:#e6e6e6;height:16px;width:16px;padding:17px}
+#fbcomcon #jewelBoxRequest .async_saving{position:relative}
+#fbcomcon #jewelBoxRequest .async_saving .loadingIndicator{background:url(/rsrc.php/zBS5C/hash/7hwy7at6.gif) no-repeat 0 0;height:11px;left:50%;margin:-5px 0 0 -6px;position:absolute;top:50%;width:16px}
+#fbcomcon #jewelBoxRequest .async_saving .uiButton{visibility:hidden}
+#fbcomcon #jewelBoxMail li{padding:0}
+#fbcomcon #jewelBoxMail li a{display:block;overflow:hidden;padding:4px 6px;text-overflow:ellipsis;white-space:nowrap}
+#fbcomcon #jewelBoxMail .content{display:block;_overflow:hidden;_text-overflow:ellipsis;width:auto;_width:220px}
+#fbcomcon #jewelBoxMail .author{color:#3b5998;font-weight:bold;padding-top:2px}
+#fbcomcon #jewelBoxMail .preview{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#fbcomcon #jewelBoxMail .subject{color:#333}
+#fbcomcon #jewelBoxMail .time{color:#9d9d9d;font-size:9px}
+#fbcomcon #jewelCase .jewelFooter a{background-color:#f7f7f7;border-top:1px solid #e0e0e0;display:block;font-weight:bold;padding:8px;text-align:center}
+#fbcomcon #jewelCase .jewelFooter a:hover,
+#fbcomcon #jewelCase .jewelFooter a:active,
+#fbcomcon #jewelCase .jewelFooter a:focus{background-color:#6d84b4;border-top:1px solid #3b5998;color:#fff;outline:none;text-decoration:none}
+#fbcomcon #jewelCase .jewelFooter .seeMoreCount{display:none;font-weight:bold;padding:2px 0 0}
+#fbcomcon #requestsWrapper .jewelFooter .seeMoreCount,
+#fbcomcon #jewelCase .jewelUnread .jewelFooter .seeMoreCount{display:block}
+#fbcomcon #jewelBoxMail.jewelHighlightItem li a:hover,
+#fbcomcon #jewelBoxMail.jewelHighlightItem li a:active,
+#fbcomcon #jewelBoxMail.jewelHighlightItem li a:focus,
+#fbcomcon #jewelBoxAlert.jewelHighlightItem li.selected{background-color:#6d84b4 !important;border-bottom:1px solid #3b5998;border-top:1px solid #3b5998;outline:none;padding-top:3px;padding-bottom:3px;text-decoration:none}
+#fbcomcon #jewelBoxAlert.jewelHighlightItem #presence_notifications_loading.selected{background-color:#fff !important;border:none;cursor:auto;padding:4px 8px}
+#fbcomcon #jewelCase .jewelFooter a:hover span,
+#fbcomcon #jewelCase .jewelFooter a:active span,
+#fbcomcon #jewelCase .jewelFooter a:focus span,
+#fbcomcon #jewelCase .jewelHighlightItem a:hover .uiTextSubtitle,
+#fbcomcon #jewelCase .jewelHighlightItem a:active .uiTextSubtitle,
+#fbcomcon #jewelCase .jewelHighlightItem a:focus .uiTextSubtitle,
+#fbcomcon #jewelCase .jewelHighlightItem li.selected a,
+#fbcomcon #jewelCase .jewelHighlightItem li.selected,
+#fbcomcon #jewelCase .jewelHighlightItem li.selected .uiTextMetadata{color:#fff}
+#fbcomcon #jewelCase .jewelHighlightItem li{cursor:pointer}
+#fbcomcon #jewelBoxAlert .staticAppIcon{background-position:right;height:16px;width:16px}
+#fbcomcon #jewelBoxAlert .selected .staticAppIcon{background-position:left}
+#fbcomcon #blueBar{background-color:#3b5998;height:41px;left:0;position:absolute;width:100%}
+#fbcomcon #blueBar.loggedOut{height:82px}
+#fbcomcon .liquid #pageFooter{zoom:1}
+#fbcomcon .fbx #pageFooter{margin:auto;width:auto}
+#fbcomcon .hasLeftCol #pageFooter{background-color:#fff;clear:both;margin-left:180px}
+#fbcomcon #pagefooter{border-top:0}
+#fbcomcon #pageFooter{color:#737373;font-size:11px;margin:0 auto;width:980px}
+#fbcomcon #pageFooter a{color:#385495;margin:0 3px;text-decoration:none;white-space:nowrap}
+#fbcomcon #pageFooter a:last-child{margin-right:0}
+#fbcomcon #pageFooter a:hover{text-decoration:underline}
+#fbcomcon #contentCurve{background-color:#fff;border-bottom:1px solid #b3b3b3;height:3px;font-size:1px}
+#fbcomcon .hasLeftCol #contentCurve{border:1px solid #b3b3b3;border-top:none;position:relative;*position:static}
+#fbcomcon #footerContainer{border-top:1px solid #eee;margin-bottom:30px;padding:3px 0 10px 0;position:relative}
+#fbcomcon #footerContainer .copyright{display:inline}
+#fbcomcon #footerContainer .brand{background-repeat:no-repeat;padding-left:22px}
+#fbcomcon #footerRight{margin-left:200px;position:absolute;text-align:right;top:3px;right:0}
+#fbcomcon .fbx{}
+#fbcomcon #globalContainer{margin:0 auto}
+#fbcomcon .fbx #globalContainer{width:981px}
+#fbcomcon .liquid #globalContainer{margin:0;min-width:980px;padding:0 50px;width:auto}
+#fbcomcon .liquid #minWidthOuter{_border-left:970px solid #fff;zoom:1}
+#fbcomcon .liquid #minWidthInner{_margin-left:-970px}
+#fbcomcon .liquid #contentCol,
+#fbcomcon .liquid #leftCol{_position:relative}
+#fbcomcon .UIFullPage_Container,
+#fbcomcon .UIStandardFrame_Container{padding:20px 0 0 0}
+#fbcomcon .fbx #tab_canvas > div{padding-top:0}
+#fbcomcon .fb_content{padding-bottom:20px}
+#fbcomcon .fbx .fb_content{padding-bottom:0}
+#fbcomcon #pageHead{height:41px;position:relative;z-index:15;margin:0 auto;width:980px}
+#fbcomcon .fbx #pageHead{margin:0;width:auto}
+#fbcomcon #pageLogo a{background:#3b5998 url(/rsrc.php/z7VU4/hash/66ad7upf.png) no-repeat -21px 0;display:block;position:absolute;height:31px;left:-6px;width:103px;top:10px}
+#fbcomcon #pageLogo a:hover,
+#fbcomcon #pageLogo a:focus,
+#fbcomcon #pageLogo a:active{outline:none;background-color:#4b67a1;background-position:-21px -31px}
+#fbcomcon #pageLogo span{display:none}
+#fbcomcon #headNavOut{background-color:#627aad;border:1px solid #1d4088;border-bottom:0;font-size:11px;height:30px;margin-left:180px;padding-left:10px;padding-right:6px;position:relative;top:10px}
+#fbcomcon #pageNav{list-style:none;margin:0;padding:0;position:absolute;right:0;top:0}
+#fbcomcon #pageNav li{float:left}
+#fbcomcon #pageNav a{color:#fff;display:block;display:inline-block;font-weight:bold;height:22px;padding:8px 10px 0 10px;text-decoration:none}
+#fbcomcon #pageNav a:hover,
+#fbcomcon #pageNav a:focus,
+#fbcomcon #pageNav a:active{outline:none;background-color:#6d86b7}
+#fbcomcon #navAccount{position:relative}
+#fbcomcon #navAccount.openToggler{background-color:#fff;border:1px solid #333;border-bottom:0;margin-left:-2px;position:relative;right:-1px;top:-1px}
+#fbcomcon #navAccount #navAccountLink{padding-right:16px;zoom:1}
+#fbcomcon .openToggler #navAccountLink{background-color:#fff;color:#333;height:22px;position:relative;z-index:3}
+#fbcomcon .openToggler #navAccountLink:hover,
+#fbcomcon .openToggler #navAccountLink:focus,
+#fbcomcon .openToggler #navAccountLink:active{background-color:#fff}
+#fbcomcon #navAccountLink img{background:url(/rsrc.php/z7VU4/hash/66ad7upf.png) no-repeat -137px 0;height:4px;left:5px;position:relative;top:-2px;width:7px}
+#fbcomcon .openToggler #navAccountLink .dropMenuDivide{background:#e0e0e0}
+#fbcomcon .openToggler #navAccountLink img{background-position:-137px -4px}
+#fbcomcon #navAccount ul{background:#fff;border:1px solid #333;border-bottom:2px solid #2d4486;display:none;margin-right:-1px;margin-top:-1px;min-width:200px;padding:10px 0 5px;position:absolute;right:0;_right:-1px;top:100%;*width:100%;_width:200px;z-index:1}
+#fbcomcon #navAccount.openToggler ul{display:block}
+#fbcomcon #navAccount ul a{color:#3a579a;display:block;font-weight:normal;height:auto;_margin-right:-25px;padding:4px 10px 5px;white-space:nowrap;*white-space:auto;_white-space:nowrap}
+#fbcomcon #navAccount ul a:hover,
+#fbcomcon #navAccount ul a:focus,
+#fbcomcon #navAccount ul a:active{background:#6d84b4;border-bottom:1px solid #3b5998;border-top:1px solid #3b5998;color:#fff;padding:3px 10px 4px}
+#fbcomcon #navAccount li{display:block;float:none}
+#fbcomcon #navAccountInfo{border-bottom:1px solid #e0e0e0;_height:60px;min-height:55px;*min-height:60px;position:relative;margin:5px 4px;padding:0 6px 0 64px}
+#fbcomcon ul #navAccountInfo a:hover,
+#fbcomcon ul #navAccountInfo a:focus,
+#fbcomcon ul #navAccountInfo a:active{background:none;border:none;color:#3b5998;padding:4px 10px 5px;text-decoration:underline}
+#fbcomcon #navAccountInfo #navAccountPic{left:-5px;margin:0;position:absolute;top:-9px;*top:-5px}
+#fbcomcon #navAccountInfo #navAccountPic img{width:50px;height:50px}
+#fbcomcon #navAccount #navAccountName{font-size:13px;font-weight:bold;margin:0;padding:0 !important;*word-wrap:break-word}
+#fbcomcon #navSearch{background-color:#fff;display:block;left:4px;position:absolute;top:4px;width:300px}
+#fbcomcon #navSearch button{background:#fff url(/rsrc.php/z7VU4/hash/66ad7upf.png) no-repeat -1px 0;border:0;cursor:pointer;display:block;height:20px;padding:0;position:absolute;right:1px;top:1px;width:20px;z-index:2}
+#fbcomcon #navSearch button span{display:none}
+#fbcomcon #navSearch .inputtext{border:0;border-right:1px solid #e5e5e5;outline:none;width:271px}
+#fbcomcon #navSearch .inputsubmit{position:absolute;top:-1000px}
+#fbcomcon #navSearch .uiTypeahead,
+#fbcomcon #navSearch .uiTypeahead .wrap{border-color:#3b5998}
+#fbcomcon #mainContainer{margin-left:-1px;display:block;width:100%}
+#fbcomcon .hasLeftCol #mainContainer{border-right:1px solid #b3b3b3}
+#fbcomcon #leftCol{display:none;float:left;padding:20px 0 0 2px;width:179px;word-wrap:break-word}
+#fbcomcon .hasLeftCol #leftCol{display:block}
+#fbcomcon #rightCol{margin-top:-10000px;float:right;padding-right:0;width:234px;word-wrap:break-word}
+#fbcomcon .hasRightCol #rightCol{margin-top:0}
+#fbcomcon .hasLeftCol #rightCol{padding-right:15px;_padding-right:9px}
+#fbcomcon #contentCol{background-color:#fff;padding-top:15px}
+#fbcomcon .hasLeftCol #contentCol{border-left:1px solid #b3b3b3;margin-left:181px}
+#fbcomcon #contentArea{display:table-cell;*display:block;margin-right:-1px;*overflow:hidden;padding-left:2px;zoom:1}
+#fbcomcon .safari3 #contentArea{display:inline-block;width:520px}
+#fbcomcon #contentArea:after, 
+#fbcomcon #contentArea::after{clear:both;content:" F a c e b o o k C S S F T W ! F a c e b o o k C S S F T W ! F a c e b o o k C S S F T W ! F a c e b o o k C S S F T W ! F a c e b o o k C S S F T W ! F a c e b o o k C S S F T W ! F a c e b o o k C S S F T W !";display:block;font-size:25px;height:0 !important;line-height:0;visibility:hidden}
+#fbcomcon #headerArea{border-bottom:2px solid #bbb;margin-bottom:5px;padding:2px 0 12px;*padding-top:0}
+#fbcomcon .hasLeftCol #contentArea,
+#fbcomcon .hasRightCol #contentArea{margin-right:0;padding-right:15px}
+#fbcomcon .hasRightCol #headerArea{margin-right:15px}
+#fbcomcon .hasLeftCol #contentArea{padding-left:15px}
+#fbcomcon .hasLeftCol #headerArea{margin-left:15px}
+#fbcomcon #bottomContent{clear:both;height:17px;font-size:1px}
+#fbcomcon .profile #rightCol .box .box_header{font-size:11px;font-weight:bold;padding:3px 5px}
+#fbcomcon #rightCol #adcolumn_advertise{display:none}
+#fbcomcon #rightCol #sidebar_ads{float:none;padding:0 0 0 0}
+#fbcomcon #rightCol #facebook .sidebar_ads_test{padding:0 0 0 17px}
+#fbcomcon #rightCol #sidebar_ads .adcolumn_wrapper{border-left:none}
+#fbcomcon #rightCol #sidebar_ads .admin_upsell,
+#fbcomcon #rightCol .UIEMUASFrame{width:210px}
+#fbcomcon #rightCol #sidebar_ads .UIEmuASIFrame,
+#fbcomcon #rightCol #sidebar_ads .UIEMUASFrame{border-top:none;border-bottom:1px solid #e5e5e5;padding-left:0;padding-right:80px;width:auto}
+#fbcomcon #rightCol #sidebar_ads .adcolumn{border-left:none}
+#fbcomcon #rightCol #sidebar_ads #adcolumn_more_ads{border-top:none;padding-left:0}
+#fbcomcon #rightCol .UITitledBox{margin-bottom:15px}
+#fbcomcon #rightCol .UITitledBox_Top{line-height:13px}
+#fbcomcon #rightCol .UITitledBox_Top small{font-size:11px}
+#fbcomcon #rightCol .friend_grid_col{margin-left:0}
+#fbcomcon #rightCol .UISuggestionList_ItemContainer{border:none;margin:0}
+#fbcomcon #rightCol #pymk .friend_grid_col{width:auto}
+#fbcomcon #pymk .friend_grid_col .fg_name{width:155px}
+#fbcomcon #globalContainer #locale_selector_dialog_onclick{display:inline;float:none;padding:0 0 0 5px;width:auto}
+#fbcomcon .fbx #globalContainer #content{min-height:inherit}
+#fbcomcon .fbx .megaphone_story{_width:500px}
+#fbcomcon .UIMessageBox{padding:10px;border-width:1px;border-style:solid}
+#fbcomcon .UIMessageBox .sub_message{margin:4px 0 0}
+#fbcomcon .status{background-color:#fff9d7;border-color:#e2c822}
+#fbcomcon .error{background-color:#ffebe8;border-color:#dd3c10}
+#fbcomcon .error a{color:#dd3c10}
+#fbcomcon .explanation_note{background-color:#fff;border-color:#bdc7d8}
+#fbcomcon .explanation_note .main_message{font-size:11px}
+#fbcomcon .explanation_note a{color:#dd3c10}
+#fbcomcon .uiTypeahead .search ul{padding-bottom:0}
+#fbcomcon .uiTypeahead .search li{_height:50px;min-height:50px;padding:2px 30px 2px 63px}
+#fbcomcon .uiTypeahead .search img{display:block;height:50px;left:6px;position:absolute;width:50px;background-color:#eceff5}
+#fbcomcon .uiTypeahead .search .text{color:#3b5998;font-weight:bold}
+#fbcomcon .uiTypeahead .search .category{font-size:11px;padding-top:0}
+#fbcomcon .uiTypeahead .search .categoryContents{position:relative}
+#fbcomcon .uiTypeahead .search .subtext{font-size:9px;padding-top:2px}
+#fbcomcon .uiTypeahead .search .seeMoreTitle{color:#3b5998;font-size:11px;font-weight:bold;padding-bottom:0;padding-right:7px;position:relative}
+#fbcomcon .uiTypeahead .search .seeMoreResultsCount{color:#999;font-size:9px;font-weight:normal}
+#fbcomcon .uiTypeahead .search .seeMoreArrow,
+#fbcomcon .uiTypeahead .search .category .externalArrow{background:transparent url(/rsrc.php/zA4IG/hash/cny9pytx.png) 0 -413px;height:7px;display:block;_display:none;position:absolute;top:4px;width:4px}
+#fbcomcon .uiTypeahead .search .seeMoreArrow{right:0}
+#fbcomcon .uiTypeahead .search .category .externalArrow{right:-7px}
+#fbcomcon .uiTypeahead .search .selected .seeMoreArrow{background-position:0 -420px}
+#fbcomcon .uiTypeahead{border:solid #bdc7d8;border-width:1px 0;cursor:default;position:relative}
+#fbcomcon .uiTypeahead .wrap{border:solid #bdc7d8;border-width:0 1px;overflow:hidden}
+#fbcomcon .uiTypeahead .textInput{border:0;outline:0;width:100%}
+#fbcomcon .uiTypeahead .selected .textInput{background:#e2e8f6}
+#fbcomcon .uiTypeaheadFocused,
+#fbcomcon .uiTypeaheadFocused .uiTypeahead{z-index:1}
+#fbcomcon .uiTypeahead .results{background:#fff;border-top:1px solid #333;border-bottom:2px solid #3b5998;display:block;left:0;position:absolute;top:100%;width:100%}
+#fbcomcon .uiTypeahead ul{border:1px solid #333;border-width:0 1px;overflow:hidden;padding:2px 0}
+#fbcomcon .uiTypeahead li{margin:0;background-color:#fff;border-top:1px solid #fff;border-bottom:1px solid #fff;color:#333;cursor:pointer;display:block;_height:1px;min-height:1px;padding:0 6px;position:relative}
+#fbcomcon .uiTypeahead li.selected{background-color:#6d84b4;border-top:1px solid #3b5998;border-bottom:1px solid #3b5998}
+#fbcomcon .uiTypeahead .icon{display:block;float:left;padding-right:4px}
+#fbcomcon .uiTypeahead .text{display:block;font-weight:normal;font-size:11px;padding:2px 0}
+#fbcomcon .uiTypeahead .subtext{color:#999;display:block}
+#fbcomcon .uiTypeahead .category{color:#666;display:block}
+#fbcomcon .uiTypeahead .results .selected *{color:#fff !important}
+#fbcomcon .uiTypeahead strong{color:#3b5998;background-color:#d8dfea}
+#fbcomcon .uiTypeahead .selected strong{background-color:#5670a6}
+#fbcomcon .uiTypeahead .results li.calltoaction{background:#f7f7f7;border-top:1px solid #ddd;border-bottom:1px solid #f7f7f7;display:block;_height:1px;min-height:1px;padding:5px 5px 9px 5px;text-align:center;margin-top:2px}
+#fbcomcon .uiTypeahead .results .calltoaction.selected{background:#6d84b4;border-bottom:1px solid #6d84b4;border-top-color:#3b5998}
+#fbcomcon #bootloader_css_2fgssmmgmw4k0w8c_pkg_css { height: 42px; }
