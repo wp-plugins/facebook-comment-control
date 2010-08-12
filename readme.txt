@@ -14,15 +14,15 @@ You have replaced the default Wordpress comments template with the Facebook <fb:
 You have replaced the default Wordpress comments template with the Facebook <fb:comments>? Then this plugin is what you need!
 
 = What the Plugin can do: =
-* List all comments on yout blog with dashboard widget
+* List all comments on your blog with dashboard widget
 * Delete comments
 * See where the comments were posted
 * See who posted the comments
+* Display the overview for specific roles only
+* Write a message to the commentator
 
 = What the plugin cannot do (To-Do-List): =
-* Display the overview for specific roles only
 * Let you comment
-* Write a message to the commentator
 
 Special thanks go to: Gil Goldshlager, 'pingflood' & 'TH_Wesley  from the Facebook developers forum
 
@@ -56,23 +56,26 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+
 = 0.2 =
-* delete link now only for app-admins
-* fixed some css issues
-* xid below comment is a link if you use id or urlencode(the_permalink()) as xid
+* Message link only appears for facebook-users
 
 = 0.1 =
 * stable release
 * added dark layout option
 * added language option
+* delete link now only for app-admins
+* fixed some css issues
+* xid below comment is a link if you use id or urlencode(the_permalink()) as xid
+* send message via plugin
+* configure userlevel to see the widget
 
 = 0.1beta =
 * release
 
 == Upgrade Notice ==
 = 0.2 =
-* the old css bugged the dashboard, so please update
-* plugin is more secure, because only admins can delete comments
+* Message link updated
 
 = 0.1 =
 * first stable release

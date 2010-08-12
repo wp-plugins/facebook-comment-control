@@ -26,6 +26,7 @@
 	
 */
 
+	
 	/**
 	 * Include the Options Page
 	 */
@@ -36,6 +37,7 @@
 	 */
 	function fbcomcon_dashboard() {
 		include_once('fbcomcon_dashboard.php');
+		echo $user_ID;
 	}
 	 
 	/**
@@ -47,6 +49,17 @@
 	 
 	/**
 	 * use hook, to integrate new widget
+	 * Adds Widget only for users equal or higher the set options
 	 */
-	add_action('wp_dashboard_setup', 'fbcomcon_setup');
+	 
+	require_once(ABSPATH . WPINC . '/pluggable.php');
+	global $user_level;
+    get_currentuserinfo();
+	
+	if(!get_option('fbcomcon_userlevel')){
+		$fbcomcon_userlevel = 10;
+	}
+	if($fbcomcon_userlevel <= $user_level || $user_level == 10){
+		add_action('wp_dashboard_setup', 'fbcomcon_setup');
+	}
 ?>

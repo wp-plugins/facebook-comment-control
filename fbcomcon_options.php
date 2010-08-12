@@ -45,11 +45,21 @@
 					</select> (Default: <i>Light Style</i>)</td>
 			</tr>';
 		echo '</table>';
-		
+
 		echo '<h3>Advanced Options</h3>';
 		echo '<table class="form-table">';
 		echo '<tr valign="top">
-				<th scope="row">Language</th>
+				<th scope="row">Min. userlevel to see FBComCon</th>
+				<td><select name="fbcomcon_userlevel" size="1">
+						<option value="10"'.$fbcomcon_userlevel_10_sel.'>Admin</option>
+						<option value="7"'.$fbcomcon_userlevel_7_sel.'>Editor</option>
+						<option value="2"'.$fbcomcon_userlevel_2_sel.'>Author</option>
+						<option value="1"'.$fbcomcon_userlevel_1_sel.'>Contributor</option>
+						<option value="0"'.$fbcomcon_userlevel_0_sel.'>Subscriber</option>
+					</select> (Default: <i>Admin</i>)</td>
+			</tr>';
+		echo '<tr valign="top">
+				<th scope="row">Language (only FB part)</th>
 				<td><select name="fbcomcon_lang" size="1">
 						<option value="en_US"'.$fbcomcon_lang_en_US_sel.'>English</option>
 						<option value="de_DE"'.$fbcomcon_lang_de_DE_sel.'>Deutsch</option>
@@ -92,7 +102,18 @@
 			</tr>';
 		echo '</table>';
 		echo '<input type="hidden" name="action" value="update" />';
-		echo '<input type="hidden" name="page_options" value="fbcomcon_app_id,fbcomcon_secret,fbcomcon_admin_uid,fbcomcon_layout,fbcomcon_lang,fbcomcon_custom_token,fbcomcon_comments_limit,fbcomcon_paging_limit,fbcomcon_paging_comments,fbcomcon_comments_count,fbcomcon_login_header" />';
+		echo '<input type="hidden" name="page_options" value="fbcomcon_app_id,
+			fbcomcon_secret,
+			fbcomcon_admin_uid,
+			fbcomcon_layout,
+			fbcomcon_userlevel,
+			fbcomcon_lang,
+			fbcomcon_custom_token,
+			fbcomcon_comments_limit,
+			fbcomcon_paging_limit,
+			fbcomcon_paging_comments,
+			fbcomcon_comments_count,
+			fbcomcon_login_header" />';
 		?>
 		<p class="submit">
 			<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />

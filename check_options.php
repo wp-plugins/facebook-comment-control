@@ -7,6 +7,15 @@
 		else{
 			$fbcomcon_layout_light_sel = ' selected';
 		}
+		//Check Userlevel
+		if(get_option('fbcomcon_userlevel')){
+			$fbcomcon_userlevel= get_option('fbcomcon_userlevel');
+			$fbcomcon_userlevel_sel = 'fbcomcon_userlevel_'.$fbcomcon_userlevel.'_sel';
+			$$fbcomcon_userlevel_sel = ' selected';
+		}
+		else{
+			$fbcomcon_userlevel = "10";
+		}
 		//Check Lang
 		if(get_option('fbcomcon_lang')){
 			$fbcomcon_lang = get_option('fbcomcon_lang');

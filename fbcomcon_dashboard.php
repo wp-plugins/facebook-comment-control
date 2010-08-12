@@ -252,7 +252,21 @@ function showComments(start) {
 					// Comment BODY text
 					var commenttext = comments[i].text;
 					var commenttext = commenttext.replace(/\n/g,'<br />');
+					
+					// Comments Message Link
+					var username = comments[i].fromid;
+					if(username != '1309634065'){
+						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message">Message</a> | ' ;
+					}
 
+					// Comments Delete Link
+					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
+						echo "
+							
+							var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">Delete</a> &nbsp;|&nbsp; ';";
+					}
+					else{ echo "var commentdelete = ''";}?>
+					
 					// Comment URL Link
 					var commenturl = comments[i].xid;
 					var count_foreach = 1;
@@ -273,13 +287,7 @@ function showComments(start) {
 						count_arr = count_arr+4;
 					}
 					
-					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
-						echo "
-							// Comments Delete Link
-							var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">Delete</a> &nbsp;|&nbsp; ';";
-					}
-					else{ echo "var commentdelete = ''";}?>
-					
+					//Creating Content
 					data +=
 					'<div id="post_'+ comments[i].xid +'_'+ comments[i].id +'" class="wallkit_post">'+
 					'<div class="wallkit_profilepic">'+ userimg +'</div>'+
@@ -288,12 +296,14 @@ function showComments(start) {
 					'<span class="wall_time">'+ commentdate +'</span></h4>'+
 					'<div>'+ commenttext +'</div>'+
 					'<div class="wallkit_actionset">'+
+					''+ commentmessage +
 					''+ commentdelete +
 					''+ commenturl +
 					'</div>'+
 					'</div>'+
 					'</div>';
 					}
+					
 
 					$('#fbcomments').html('<div class="wallkit_posts">' + data + '</div>');
 					if (paging_comments == 'true'){
