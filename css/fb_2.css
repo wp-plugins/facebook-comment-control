@@ -1,0 +1,78 @@
+/*
+HTTP Host: static.ak.fbcdn.net
+Generated: August 6th 2010 8:06:14 AM PDT
+Machine: 10.138.17.186
+Locale: nu_ll
+Path: css/bwgy0uih1y8g8cgo.pkg.css
+*/
+
+
+#fbcomcon .wallkit_frame{}
+#fbcomcon .wallkit_frame .inputsubmit-disabled{background-color:#fff;border-bottom:1px solid #999;border-right:1px solid #999;color:#666}
+#fbcomcon .wallkit_frame .pager{overflow:hidden;text-align:right;padding-bottom:10px}
+#fbcomcon .wallkit_post{margin:10px 10px 5px 0;padding-bottom:5px;border-bottom:1px solid #d8dfea}
+#fbcomcon .wallkit_post .wallkit_profilepic{position:absolute;width:50px}
+#fbcomcon .wallkit_post .wallkit_postcontent{margin-left:50px;padding-left:10px}
+#fbcomcon .wallkit_post .wallkit_postcontent h4{padding:0 5px 3px 0;font-weight:normal}
+#fbcomcon .wallkit_post .wallkit_postcontent h4 .wall_time{margin-left:1px;font-size:9px;padding:2px 0 0 4px;color:#808080}
+#fbcomcon .wallkit_post .wallkit_postcontent h4 .time{display:none}
+#fbcomcon .wallkit_post .wallkit_postcontent h4 a{font-weight:bold}
+#fbcomcon .wallkit_post .wallkit_postcontent div{padding:3px 0}
+#fbcomcon .wallkit_post .wallkit_profilepic img{display:block;float:left}
+#fbcomcon .wallkit_post div.wallkit_actionset{font-size:9px;padding-bottom:3px}
+#fbcomcon .wallkit_title{font-size:16px;font-weight:bold;overflow:hidden}
+#fbcomcon .wallkit_title div.title_left{float:left}
+#fbcomcon .wallkit_subtitle{padding:3px 5px 2px 0;font-size:11px;font-weight:normal}
+#fbcomcon .wallkit_form{padding:5px 10px 5px 0}
+#fbcomcon .wallkit_form .editsettings{float:right;margin:5px}
+#fbcomcon .wallkit_form .inputtext{display:block;margin:5px 0 5px 0}
+#fbcomcon .wallkit_form .inputsubmit{margin:0 5px 0 0;display:inline}
+#fbcomcon .wallkit_form div.text_spacer{padding-left:5px;padding-right:13px}
+#fbcomcon .wallkit_form textarea{overflow:hidden;display:inline;height:44px;padding:3px;margin-top:5px;width:100%}
+#fbcomcon .wallkit_form .toggleform{text-align:center;margin:5px 0;padding-left:10px;padding-right:18px}
+#fbcomcon .wallkit_form .login{text-align:center;margin:5px 0}
+#fbcomcon .wallkit_form .hidden{display:none}
+#fbcomcon .wallkit_form .hidden textarea{display:none}
+#fbcomcon .wallkit_form .hidden .inputsubmit{display:none}
+#fbcomcon .wallkit_form div.loading_page{position:absolute;padding-top:60px;margin-left:19px}
+#fbcomcon .wallkit_form div.pic_hidden{padding-top:10px}
+#fbcomcon .wallkit_form div.profile_pic{position:absolute}
+#fbcomcon .wallkit_form .composer{padding:0 0 0 55px;background:transparent none repeat scroll 0 0;border:0}
+#fbcomcon .wallkit_form div.connect_area{margin:5px}
+#fbcomcon .wallkit_form div.connect_area div.nameemail{float:left}
+#fbcomcon .wallkit_form div.connect_area div.or{float:left;font-size:13pt;font-weight:bold;padding:15px 30px}
+#fbcomcon .wallkit_form div.connect_button_text .hint_text{display:inline}
+#fbcomcon .wallkit_form div.connect_button_text .anon{display:block;width:169px}
+#fbcomcon .wallkit_form div.connect_area div.connect_button_text{float:left}
+#fbcomcon .wallkit_form div.connect_area div.connect_button_text .connect_button{margin:5px 10px 5px 0;vertical-align:middle}
+#fbcomcon .wallkit_form div.post_area{float:right;padding:5px 5px 5px 10px}
+#fbcomcon .wallkit_form div.post_area .uiButton{margin:0 0 0 10px}
+#fbcomcon .wallkit_form div.post_area div.connected{display:inline}
+#fbcomcon .wallkit_form .show_not_connected div.post_area div.connected{display:none}
+#fbcomcon .wallkit_form div.post_button{margin:10px}
+#fbcomcon .wallkit_form .show_connected .connect_area{display:none}
+#fbcomcon .wallkit_form .show_connected .not_connected{display:none}
+#fbcomcon .wallkit_form .show_not_connected .connected{display:none}
+#fbcomcon .wallkit_subtitle .subtitle_left{float:left;overflow:visible;width:150px}
+#fbcomcon .wallkit_subtitle .pager{float:right}
+#fbcomcon .wallkit_subtitle .post_counter{float:right;margin:0 5px}
+#fbcomcon .wallkit_subtitle .subtitle_action{display:inline;float:right}
+#fbcomcon div.wallkit_subtitle div.subtitle_right .left{float:right}
+#fbcomcon .wallkit_subtitle span.pipe{float:right}
+#fbcomcon .wallkit_form .wall_captcha{margin:0 5px;padding-bottom:8px}
+#fbcomcon .wallkit_form .wall_captcha #captcha{text-align:left}
+#fbcomcon .wallkit_form .wall_captcha #captcha h3{font-size:11px;font-weight:bold}
+#fbcomcon .wallkit_form .UIContentBox .wall_captcha #captcha h3{float:left;background:#f7f7f7;padding-right:5px;margin-bottom:5px}
+#fbcomcon .wallkit_form .wall_captcha #captcha .divider{border-bottom:solid 1px #ccc;display:block;margin-bottom:5px;padding-top:2px}
+#fbcomcon .wallkit_form .UIContentBox .wall_captcha #captcha .divider{line-height:1px;margin-bottom:10px;padding-top:0;height:10px}
+#fbcomcon .wallkit_form .wall_captcha #captcha fieldset{text-align:left;width:auto;min-width:0;margin-left:2px}
+#fbcomcon .wallkit_form .wall_captcha #captcha #captcha_response{border:1px solid #bdc7d8;padding:3px}
+#fbcomcon .wallkit_form .wall_captcha #captcha #captcha_whatsthis{display:none}
+#fbcomcon .wallkit_form .wall_captcha #captcha .captcha_optout{display:none}
+#fbcomcon .wallkit_form .wall_captcha #captcha .captcha_challenge{padding:5px 0}
+#fbcomcon .wallkit_form .wall_captcha #captcha .captcha_challenge .recaptcha_text{width:300px}
+#fbcomcon .wallkit_form .wall_captcha #captcha .captcha_challenge #recaptcha_image{margin:5px 0 0 0}
+#fbcomcon .mu-connect-disable-logout .logout{display:none}
+#fbcomcon div.hidden{display:none}
+#fbcomcon .auto_resize_iframe input.inputcancel{margin-left:10px}
+#fbcomcon #bootloader_css_bwgy0uih1y8g8cgo_pkg_css { height: 42px; }
