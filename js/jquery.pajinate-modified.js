@@ -172,7 +172,7 @@
 			start_from = page_num * ipp;
 			
 			// Find the end of the next slice
-			end_on = start_from + ipp;
+			end_on = parseInt(start_from) + parseInt(ipp);
 			// Hide the current page	
 			$items.hide()
 					.slice(start_from, end_on)
