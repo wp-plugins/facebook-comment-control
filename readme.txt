@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Marco Scheffel 'Unl3a5h3r'
+Contributors: Unl3a5h3r
 Special thanks to: Gil Goldshlager, 'pingflood' & 'TH_Wesley
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N6E42VW26QD66
 Tags: comments, spam, facebook, social plugin, social network
@@ -57,32 +57,37 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 == Changelog ==
 = 0.3 =
-* send message via plugin
-* configure userlevel to see the widget
+* finally got updating working
+
+= 0.2.4 =
+* finally got updating working
+
+= 0.2.3 =
+* new readme
+
+= 0.2.2 =
+* new readme
+
+= 0.2.1 =
+* new screenshots
 
 = 0.2 =
-* delete link now only for app-admins
-* fixed some css issues
-* xid below comment is a link if you use id or urlencode(the_permalink()) as xid
+* Message link only appears for facebook-users
 
 = 0.1 =
 * stable release
 * added dark layout option
 * added language option
+* delete link now only for app-admins
+* fixed some css issues
+* xid below comment is a link if you use id or urlencode(the_permalink()) as xid
+* send message via plugin
+* configure userlevel to see the widget
 
 = 0.1beta =
 * release
+
 
 == Upgrade Notice ==
 = 0.3 =
-* more security through userlevel control
-
-= 0.2 =
-* the old css bugged the dashboard, so please update
-* plugin is more secure, because only admins can delete comments
-
-= 0.1 =
-* first stable release
-
-= 0.1beta =
-* release
+Paging now works thanks to Gil

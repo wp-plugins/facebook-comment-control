@@ -254,7 +254,10 @@ function showComments(start) {
 					var commenttext = commenttext.replace(/\n/g,'<br />');
 					
 					// Comments Message Link
-					var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message">Message</a> | ' ;
+					var username = comments[i].fromid;
+					if(username != '1309634065'){
+						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message">Message</a> | ' ;
+					}
 
 					// Comments Delete Link
 					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
