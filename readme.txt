@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Marco Scheffel 'Unl3a5h3r'
+Contributors: Unl3a5h3r
 Special thanks to: Gil Goldshlager, 'pingflood' & 'TH_Wesley
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N6E42VW26QD66
 Tags: comments, spam, facebook, social plugin, social network
