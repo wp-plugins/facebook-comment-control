@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 2.7
 Tested up to: 3.1
-Stable tag: 0.3
+Stable tag: 0.4
 
 You have replaced the default Wordpress comments template with the Facebook <fb:comments>? Then this plugin is what you need!
 
@@ -56,8 +56,13 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+= 0.3.1 =
+* Message links works again
+* Message link only for Facebook users
+* Names will be displayed again
+
 = 0.3 =
-* finally got updating working
+* Paging now works thanks to Gil
 
 = 0.2.4 =
 * finally got updating working
@@ -89,5 +94,8 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 
 == Upgrade Notice ==
+= 0.3.1 =
+Lots of error-fixing
+
 = 0.3 =
 Paging now works thanks to Gil

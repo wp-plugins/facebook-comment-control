@@ -245,8 +245,13 @@ function showComments(start) {
 					var a_p = "";
 					var curr_hour = commentdate.getHours();
 					if (curr_hour < 12){a_p = "AM";}else{a_p = "PM";}if (curr_hour == 0){curr_hour = 12;}if (curr_hour > 12){curr_hour = curr_hour - 12;}
+					
 					var curr_min = commentdate.getMinutes();
+					if(curr_min < 10){
+						curr_min = '0' + curr_min;
+					}
 					commentdate = curr_date + "." + curr_month + "." + curr_year + " at " + curr_hour + ":" + curr_min + " " + a_p;
+					
 					if (localdate == 'true'){var commentdate = comment_date};
 
 					// Comment BODY text
@@ -254,9 +259,12 @@ function showComments(start) {
 					var commenttext = commenttext.replace(/\n/g,'<br />');
 					
 					// Comments Message Link
-					var username = comments[i].fromid;
-					if(username != '1309634065'){
+					var commentmessage = comments[i].fromid;
+					if(commentmessage != '1309634065'){
 						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message">Message</a> | ' ;
+					}
+					else{
+						commentmessage = '';
 					}
 
 					// Comments Delete Link
