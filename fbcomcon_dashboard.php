@@ -84,7 +84,7 @@ window.fbAsyncInit = function() {
 		 $('#login').hide();
 		 $('#logout').show();
 		 FB.api('/me', function(response) {
-		 $('div.login_header div.menu').prepend("<span>Logged in as</span>");
+		 $('div.login_header div.menu').prepend("<span><?php _e('Logged in as','fbcomcon');?></span>");
 		 $('div.login_header div.menu span').after("&nbsp;" + response.name);
 		 });
 		}
@@ -207,7 +207,7 @@ function showComments(start) {
 					if(curr_min < 10){
 						curr_min = '0' + curr_min;
 					}
-					commentdate = curr_date + "." + curr_month + "." + curr_year + " at " + curr_hour + ":" + curr_min + " " + a_p;
+					commentdate = curr_date + "." + curr_month + "." + curr_year + " <?php _e('at','fbcomcon');?> " + curr_hour + ":" + curr_min + " " + a_p;
 					
 					if (localdate == 'true'){var commentdate = comment_date};
 
@@ -218,7 +218,7 @@ function showComments(start) {
 					// Comments Message Link
 					var commentmessage = comments[i].fromid;
 					if(commentmessage != '1309634065' && commentmessage != <?php echo $logged_in_uid;?> ){
-						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message"><?php _e('Message','fbcomcon');?></a> | ' ;
+						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="<?php _e('Message','fbcomcon');?>"><?php _e('Message','fbcomcon');?></a> | ' ;
 					}
 					else{
 						commentmessage = '';
@@ -226,8 +226,7 @@ function showComments(start) {
 
 					// Comments Delete Link
 					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
-						echo "
-							var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">". _e('Delete','fbcomcon') ."</a> &nbsp;|&nbsp; ';";
+						echo "var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">". __('Delete','fbcomcon') ."</a> &nbsp;|&nbsp; ';";
 					}
 					else{ echo "var commentdelete = ''";}?>
 
@@ -307,7 +306,7 @@ function showComments(start) {
 		<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
 			echo "
 				function deleteComment(commentid,commentxid) {
-					if (!confirm('". _e('Delete Comment','fbcomcon') ."?')) return false;
+					if (!confirm('". __('Delete Comment','fbcomcon') ."?')) return false;
 
 					FB.api({
 						method: 'comments.remove',
@@ -317,9 +316,9 @@ function showComments(start) {
 					},
 					function(response) {
 						if (!response || response.error_code) {
-							alert(\"". _e('ERROR: Failed to delete comment, please try again.','fbcomcon') ."\");
+							alert(\"". __('ERROR: Failed to delete comment, please try again.','fbcomcon') ."\");
 						} else {
-							alert('". _e('Comment Successfully Deleted','fbcomcon') ."');
+							alert('". __('Comment Successfully Deleted','fbcomcon') ."');
 							$(\"#post_\"+commentxid+\"_\"+commentid).slideUp(500, this.remove);
 						}
 					});
