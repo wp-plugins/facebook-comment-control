@@ -16,7 +16,7 @@
 ?>
 		
 		<div class="wrap">
-			<h2><?php _e('Facebook Comments for WordPress Options','fbcomcon');?></h2>
+			<h2><?php _e('Facobook Comment Control for Wordpress Options','fbcomcon');?></h2>
 		
 			<form method="post" action="options.php">
 		
