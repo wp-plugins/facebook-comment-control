@@ -57,7 +57,7 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 == Changelog ==
 = 0.6 =
-* Added localisation
+* Added localization
 * Minor bugfixung
 
 = 0.5 =
@@ -108,7 +108,7 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 == Upgrade Notice ==
 = 0.6 =
-Finally true localisation. Feel free to send me new .mo files (French,...)
+Finally true localization. Feel free to send me new .mo files (French,...)
 
 = 0.3.1 =
 Lots of error-fixing
@@ -127,5 +127,5 @@ NOTE: The following are all issues with the Facebook library itself. They are ou
 
 == Upcoming Features ==
 
-* More localisation (need help here, please contact me)
+* More localization (need help here, please contact me)
 * More styling
