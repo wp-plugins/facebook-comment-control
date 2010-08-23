@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Facebook Comment Control 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/facebook-comment-control\n"
-"POT-Creation-Date: 2010-08-23 18:42+0000\n"
-"PO-Revision-Date: 2010-08-23 22:53+0100\n"
+"POT-Creation-Date: 2010-08-23 21:17+0000\n"
+"PO-Revision-Date: 2010-08-23 23:20+0100\n"
 "Last-Translator: Marco <nagi.b@web.de>\n"
 "Language-Team: Unl3a5h3r <marco.scheffel@gmx.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,13 +17,57 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 
+#: fbcomcon_dashboard.php:120
+msgid "Login"
+msgstr "Einloggen"
+
+#: fbcomcon_dashboard.php:120
+msgid "Logout"
+msgstr "Ausloggen"
+
+#: fbcomcon_dashboard.php:136
+msgid "Comments"
+msgstr "Kommentare"
+
+#: fbcomcon_dashboard.php:168
+msgid "No comments"
+msgstr "Keine Kommentare"
+
+#: fbcomcon_dashboard.php:185
+msgid "view profile"
+msgstr "Profil anschauen"
+
+#: fbcomcon_dashboard.php:221
+msgid "Message"
+msgstr "Nachricht senden"
+
+#: fbcomcon_dashboard.php:230
+msgid "Delete"
+msgstr "Löschen"
+
+#: fbcomcon_dashboard.php:303
+msgid "Loading..."
+msgstr "Laden..."
+
+#: fbcomcon_dashboard.php:310
+msgid "Delete Comment"
+msgstr "Kommentar löschen"
+
+#: fbcomcon_dashboard.php:320
+msgid "ERROR: Failed to delete comment, please try again."
+msgstr "FEHLER: Kommentar konnte nicht gelöscht werden. Bitte erneut versuchen."
+
+#: fbcomcon_dashboard.php:322
+msgid "Comment Successfully Deleted"
+msgstr "Kommentar erfolgreich gelöscht"
+
 #: fbcomcon_options.php:14
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Sie haben keine ausreichende Berechtigung um diese Seite anzuzeigen."
 
 #: fbcomcon_options.php:19
-msgid "Facobook Comment Control for Wordpress Options"
-msgstr "Facobook Comment Control für Wordpress Einstellungen"
+msgid "Facebook Comment Control for Wordpress - Options"
+msgstr "Facobook Comment Control für Wordpress - Einstellungen"
 
 #: fbcomcon_options.php:26
 msgid "General"
@@ -60,13 +104,12 @@ msgstr "Dunkler Stil"
 
 #: fbcomcon_options.php:55
 #: fbcomcon_options.php:75
+#: fbcomcon_options.php:80
 #: fbcomcon_options.php:84
-#: fbcomcon_options.php:89
-#: fbcomcon_options.php:93
-#: fbcomcon_options.php:97
+#: fbcomcon_options.php:88
+#: fbcomcon_options.php:96
 #: fbcomcon_options.php:105
 #: fbcomcon_options.php:114
-#: fbcomcon_options.php:123
 msgid "Default"
 msgstr "Standard"
 
@@ -100,66 +143,53 @@ msgid "Subscriber"
 msgstr "Abonnent"
 
 #: fbcomcon_options.php:79
-msgid "Language"
-msgstr "Sprache"
-
-#: fbcomcon_options.php:82
-#: fbcomcon_options.php:84
-msgid "English"
-msgstr "Englisch"
-
-#: fbcomcon_options.php:83
-msgid "German"
-msgstr "Deutsch"
-
-#: fbcomcon_options.php:88
 msgid "Custom token (optional)"
 msgstr "Benutzerdefinierter Token (optional)"
 
-#: fbcomcon_options.php:89
+#: fbcomcon_options.php:80
 msgid "empty"
 msgstr "leer"
 
-#: fbcomcon_options.php:92
+#: fbcomcon_options.php:83
 msgid "Number of comments to display"
 msgstr "Zahl der anzuzeigenden Kommentare"
 
-#: fbcomcon_options.php:93
+#: fbcomcon_options.php:84
 msgid "unlimited"
 msgstr "unendlich"
 
-#: fbcomcon_options.php:96
+#: fbcomcon_options.php:87
 msgid "Number of Comments per Page"
 msgstr "Zahl der Kommentare pro Seite"
 
-#: fbcomcon_options.php:100
+#: fbcomcon_options.php:91
 msgid "Enable Paging"
 msgstr "Seitenverwaltung aktivieren"
 
+#: fbcomcon_options.php:94
+#: fbcomcon_options.php:96
 #: fbcomcon_options.php:103
 #: fbcomcon_options.php:105
 #: fbcomcon_options.php:112
 #: fbcomcon_options.php:114
-#: fbcomcon_options.php:121
-#: fbcomcon_options.php:123
 msgid "Yes"
 msgstr "Ja"
 
+#: fbcomcon_options.php:95
 #: fbcomcon_options.php:104
 #: fbcomcon_options.php:113
-#: fbcomcon_options.php:122
 msgid "No"
 msgstr "Nein"
 
-#: fbcomcon_options.php:109
+#: fbcomcon_options.php:100
 msgid "Show Comments Count"
 msgstr "Zahl der Kommentare anzeigen"
 
-#: fbcomcon_options.php:118
+#: fbcomcon_options.php:109
 msgid "Show Login Header"
 msgstr "Login Kopfzeile anzeigen"
 
-#: fbcomcon_options.php:146
+#: fbcomcon_options.php:136
 msgid "Save Changes"
 msgstr "Änderungen speichern"
 
@@ -183,3 +213,11 @@ msgstr "Marco Scheffel"
 msgid "http://www.facebook.com/ms.fb.ger"
 msgstr "http://www.facebook.com/ms.fb.ger"
 
+#~ msgid "Language"
+#~ msgstr "Sprache"
+
+#~ msgid "English"
+#~ msgstr "Englisch"
+
+#~ msgid "German"
+#~ msgstr "Deutsch"
