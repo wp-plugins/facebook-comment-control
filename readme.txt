@@ -108,3 +108,17 @@ Lots of error-fixing
 
 = 0.3 =
 Paging now works thanks to Gil
+
+
+== Known Issues ==
+
+* The paging links display always. First should not be displayed on first page and last not on last page
+
+NOTE: The following are all issues with the Facebook library itself. They are out of my control.
+
+* The Facebook API has no 'block user' method so I cannot add it
+
+== Upcoming Features ==
+
+* More localisation (need help here, please contact me)
+* More styling
