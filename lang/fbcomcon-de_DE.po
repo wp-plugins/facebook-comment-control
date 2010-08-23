@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Facebook Comment Control 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/facebook-comment-control\n"
-"POT-Creation-Date: 2010-08-23 21:17+0000\n"
-"PO-Revision-Date: 2010-08-23 23:20+0100\n"
+"POT-Creation-Date: 2010-08-23 21:35+0000\n"
+"PO-Revision-Date: 2010-08-23 23:36+0100\n"
 "Last-Translator: Marco <nagi.b@web.de>\n"
 "Language-Team: Unl3a5h3r <marco.scheffel@gmx.net>\n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
+
+#: fbcomcon_dashboard.php:87
+msgid "Logged in as"
+msgstr "Eingeloggt als"
 
 #: fbcomcon_dashboard.php:120
 msgid "Login"
@@ -37,27 +41,31 @@ msgstr "Keine Kommentare"
 msgid "view profile"
 msgstr "Profil anschauen"
 
+#: fbcomcon_dashboard.php:210
+msgid "at"
+msgstr "um"
+
 #: fbcomcon_dashboard.php:221
 msgid "Message"
 msgstr "Nachricht senden"
 
-#: fbcomcon_dashboard.php:230
+#: fbcomcon_dashboard.php:229
 msgid "Delete"
 msgstr "Löschen"
 
-#: fbcomcon_dashboard.php:303
+#: fbcomcon_dashboard.php:302
 msgid "Loading..."
 msgstr "Laden..."
 
-#: fbcomcon_dashboard.php:310
+#: fbcomcon_dashboard.php:309
 msgid "Delete Comment"
 msgstr "Kommentar löschen"
 
-#: fbcomcon_dashboard.php:320
+#: fbcomcon_dashboard.php:319
 msgid "ERROR: Failed to delete comment, please try again."
 msgstr "FEHLER: Kommentar konnte nicht gelöscht werden. Bitte erneut versuchen."
 
-#: fbcomcon_dashboard.php:322
+#: fbcomcon_dashboard.php:321
 msgid "Comment Successfully Deleted"
 msgstr "Kommentar erfolgreich gelöscht"
 
