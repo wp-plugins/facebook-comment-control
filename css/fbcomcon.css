@@ -1,0 +1,37 @@
+span.aname {font-weight:bold;}
+
+div.login_header {height:53px; margin-bottom:20px;}
+
+div.login_header div.menu {
+height:28px;
+font:bold 18px 'lucida grande',tahoma,verdana,arial,sans-serif;
+line-height:28px;
+vertical-align:middle;
+color:#ffffff !important;
+background-color:#627BAD;
+border-top:8px solid #3B5A98;
+border-right:8px solid #3B5A98;
+margin-left:53px;
+padding-left:10px;
+}
+
+div.login_header div.menu span {font-size:11px; color:#eee;}
+
+div.login_header div.menu a {
+float:right;
+font-size:11px;
+color:#ffffff !important;
+text-decoration:none;
+padding:0px 10px;
+}
+
+div.login_header div.menu a:hover {background-color:#6D86B7;}
+
+div.login_header div.img {
+width:50px;
+height:50px;
+position:absolute;
+z-index:1;
+}
+
+div.login_header div.img img {border:none;}

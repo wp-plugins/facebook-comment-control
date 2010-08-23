@@ -5,13 +5,13 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 2.7
 Tested up to: 3.1
-Stable tag: 0.4
+Stable tag: 0.5
 
-You have replaced the default Wordpress comments template with the Facebook <fb:comments>? Then this plugin is what you need!
+You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
 == Description ==
 
-You have replaced the default Wordpress comments template with the Facebook <fb:comments>? Then this plugin is what you need!
+You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
 = What the Plugin can do: =
 * List all comments on your blog with dashboard widget
@@ -35,13 +35,13 @@ Special thanks go to: Gil Goldshlager, 'pingflood' & 'TH_Wesley  from the Facebo
 == Frequently Asked Questions ==
 
 = I have installed the plugin according to the manual, but I get an error like =
-= 'Warning: file_get_contents(https://graph.facebook.com/oauth/access_token?type=client_cred&client_id=YOUR_APP_ID&client_secret=YOUR_SECRET) [function.file-get-contents]: failed to open stream: No such file or directory' =
+= 'Warning: file_get_contents(URL) [function.file-get-contents]: failed to open stream: No such file or directory' =
 
 Your server might be behind a proxy.
 * Just visit the page mentioned in the error code (https://graph.facebook.com/oauth/access_token?type=client_cred&client_id=YOUR_APP_ID&client_secret=YOUR_SECRET)
 * Copy the code after 'access_token='
 * Go back to the settings page of Facebook Comment Control and put that code into the field 'Custom token'
-* Save and everything should work
+* Save and everything should be fine
 
 = Why do I only get a blue bar and a placeholderimage on my dashboard. =
 
@@ -56,6 +56,15 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+= 0.5 =
+* Message link not displayed for app admin
+* Compressed .css files
+* Compressed .js files
+* Fixed readme file
+
+= 0.4 =
+* Minor bugfixes
+
 = 0.3.1 =
 * Message links works again
 * Message link only for Facebook users

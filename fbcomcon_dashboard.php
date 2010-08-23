@@ -16,8 +16,11 @@
 	$logged_in_uid = ereg_replace("[^0-9]", "", $logged_in_uid);
 	
 	include_once('check_options.php');
-	
-	//getting post data into java variable
+			
+	/*  getting post data into java variable
+	 *  Used for direct link
+	 */
+
 
 	$content = '';
 	$count_foreach = 1;
@@ -37,14 +40,11 @@
 	var postdata = [<?php echo $content;?>];
 </script>
 
-<link href="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/css/fb_1.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/css/fb_2.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/css/fb_3.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/css/compressed.css" rel="stylesheet" type="text/css"/>
 <?php if(get_option("fbcomcon_layout")=='dark'){
-	echo '<link href="'.get_option("siteurl")."/".PLUGINDIR.'/facebook-comment-control/css/dark_comments.css" rel="stylesheet" type="text/css" />';
+	echo '<link href="'.get_option("siteurl")."/".PLUGINDIR.'/facebook-comment-control/css/dark_compressed.css" rel="stylesheet" type="text/css" />';
 }?>
-<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery-latest.min.js" type="text/javascript"></script>
-<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery.pajinate-modified.js" type="text/javascript"></script>
+<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/compressed.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 // Application ID# - enter your application ID# (Not API Key!) //
@@ -72,49 +72,6 @@ var login_header = '<?php echo $login_header;?>';
 var localdate = 'false';
 </script>
 
-<style type='text/css'>
-<?php if(get_option("fbcomcon_background")){
-	echo '.wallkit_frame{background-color:'.get_option("fbcomcon_background").';}';
-}?>
-	
-span.aname {font-weight:bold;}
-
-div.login_header {height:53px; margin-bottom:20px;}
-
-div.login_header div.menu {
-height:28px;
-font:bold 18px 'lucida grande',tahoma,verdana,arial,sans-serif;
-line-height:28px;
-vertical-align:middle;
-color:#ffffff !important;
-background-color:#627BAD;
-border-top:8px solid #3B5A98;
-border-right:8px solid #3B5A98;
-margin-left:53px;
-padding-left:10px;
-}
-
-div.login_header div.menu span {font-size:11px; color:#eee;}
-
-div.login_header div.menu a {
-float:right;
-font-size:11px;
-color:#ffffff !important;
-text-decoration:none;
-padding:0px 10px;
-}
-
-div.login_header div.menu a:hover {background-color:#6D86B7;}
-
-div.login_header div.img {
-width:50px;
-height:50px;
-position:absolute;
-z-index:1;
-}
-
-div.login_header div.img img {border:none;}
-</style>
 
 <div id="fb-root"></div>
 <script type="text/javascript">
@@ -260,7 +217,7 @@ function showComments(start) {
 					
 					// Comments Message Link
 					var commentmessage = comments[i].fromid;
-					if(commentmessage != '1309634065'){
+					if(commentmessage != '1309634065' && commentmessage != <?php echo $logged_in_uid;?> ){
 						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message">Message</a> | ' ;
 					}
 					else{
@@ -270,11 +227,10 @@ function showComments(start) {
 					// Comments Delete Link
 					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
 						echo "
-							
 							var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">Delete</a> &nbsp;|&nbsp; ';";
 					}
 					else{ echo "var commentdelete = ''";}?>
-					
+
 					// Comment URL Link
 					var commenturl = comments[i].xid;
 					var count_foreach = 1;
