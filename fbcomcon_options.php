@@ -23,7 +23,7 @@
 				<?php wp_nonce_field('update-options'); include_once('check_options.php');?>
 		
 				<div id="poststuff" class="postbox">
-					<h3><?php _e('Facebook Comment Control - Options','fbcomcon');?></h3>
+					<h3><?php _e('General','fbcomcon');?></h3>
 					<div class="inside">
 						<table class="form-table">
 							<tr valign="top">
