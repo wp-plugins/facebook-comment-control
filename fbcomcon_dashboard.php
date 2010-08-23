@@ -109,7 +109,7 @@ window.fbAsyncInit = function() {
 (function() {
 	var e = document.createElement('script'); e.async = false;
 	e.src = document.location.protocol +
-	'//connect.facebook.net/<?php echo $fbcomcon_lang;?>/all.js';
+	'//connect.facebook.net/en_US/all.js';
 	document.getElementById('fb-root').appendChild(e);
 }());
 </script>
@@ -117,7 +117,7 @@ window.fbAsyncInit = function() {
 <div class="wallkit_frame clearfix">
 <div class="login_header">
 <div class="img"><fb:profile-pic uid="loggedinuser" size="square" width="50" height="50" /></div>
-<div class="menu"><a id="login" href="#" style="display:none;">Login</a><a id="logout" href="#" style="display:none;">Logout</a></div>
+<div class="menu"><a id="login" href="#" style="display:none;"><?php _e('Login','fbcomcon');?></a><a id="logout" href="#" style="display:none;"><?php _e('Logout','fbcomcon');?></a></div>
 </div>
 <div class="comment_body" id="fbcomments"></div>
 </div>
@@ -133,7 +133,7 @@ $('div.login_header').hide();
 if (comments_count == 'true'){function commentscount(){
 var totalcount = $("div.wallkit_post").size();
 if (totalcount > 0) {
-	$("div.post_counter").text(""+totalcount+" Comments.");
+	$("div.post_counter").text(""+totalcount+" <?php _e('Comments','fbcomcon');?>.");
 }
 };}
 
@@ -165,7 +165,7 @@ function showComments(start) {
 					var data = '';
 
 					if (comments.length == 0 || typeof comments.length === 'undefined') {
-						data = '<h4 style="height:18px;">No comments</h4>';
+						data = '<h4 style="height:18px;"><?php _e('No comments','fbcomcon');?></h4>';
 						limit_next_page = true;
 					} else if (comments.length < per_page) {
 						limit_next_page = true;
@@ -182,7 +182,7 @@ function showComments(start) {
 					if(userimg == '1309634065'){
 						var userimg = '<span><img src="http://static.ak.fbcdn.net/rsrc.php/z5HB7/hash/ecyu2wwn.gif" class="img"></span>';
 					}else{
-						var userimg = '<a target="_blank" href="'+ users[comments[i].fromid].url +'" title="'+ users[comments[i].fromid].name +' - view profile."><img src="https://graph.facebook.com/'+ comments[i].fromid +'/picture" class="img"></a>';
+						var userimg = '<a target="_blank" href="'+ users[comments[i].fromid].url +'" title="'+ users[comments[i].fromid].name +' - <?php _e('view profile','fbcomcon');?>."><img src="https://graph.facebook.com/'+ comments[i].fromid +'/picture" class="img"></a>';
 					}
 
 					// Comment username and Link
@@ -218,7 +218,7 @@ function showComments(start) {
 					// Comments Message Link
 					var commentmessage = comments[i].fromid;
 					if(commentmessage != '1309634065' && commentmessage != <?php echo $logged_in_uid;?> ){
-						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message">Message</a> | ' ;
+						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="Message"><?php _e('Message','fbcomcon');?></a> | ' ;
 					}
 					else{
 						commentmessage = '';
@@ -227,7 +227,7 @@ function showComments(start) {
 					// Comments Delete Link
 					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
 						echo "
-							var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">Delete</a> &nbsp;|&nbsp; ';";
+							var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">". _e('Delete','fbcomcon') ."</a> &nbsp;|&nbsp; ';";
 					}
 					else{ echo "var commentdelete = ''";}?>
 
@@ -300,14 +300,14 @@ function showComments(start) {
 				return false;
 			}
 	
-			$('#fbcomments').html('<img src="http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif" title="Loading..." alt="Loading..." style="width:32px; height:32px; display:block; margin:50px auto;">');
+			$('#fbcomments').html('<img src="http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif" title="<?php _e('Loading...','fbcomcon');?>" alt="<?php _e('Loading...','fbcomcon');?>" style="width:32px; height:32px; display:block; margin:50px auto;">');
 			showComments(currentpage);
 		}
 		
 		<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
 			echo "
 				function deleteComment(commentid,commentxid) {
-					if (!confirm('Delete Comment?')) return false;
+					if (!confirm('". _e('Delete Comment','fbcomcon') ."?')) return false;
 
 					FB.api({
 						method: 'comments.remove',
@@ -317,9 +317,9 @@ function showComments(start) {
 					},
 					function(response) {
 						if (!response || response.error_code) {
-							alert(\"ERROR: Failed to delete comment, please try again.\");
+							alert(\"". _e('ERROR: Failed to delete comment, please try again.','fbcomcon') ."\");
 						} else {
-							alert('Comment Successfully Deleted');
+							alert('". _e('Comment Successfully Deleted','fbcomcon') ."');
 							$(\"#post_\"+commentxid+\"_\"+commentid).slideUp(500, this.remove);
 						}
 					});

@@ -16,15 +16,6 @@
 		else{
 			$fbcomcon_userlevel = "10";
 		}
-		//Check Lang
-		if(get_option('fbcomcon_lang')){
-			$fbcomcon_lang = get_option('fbcomcon_lang');
-			$fbcomcon_lang_sel = 'fbcomcon_lang_'.$fbcomcon_lang.'_sel';
-			$$fbcomcon_lang_sel = ' selected';
-		}
-		else{
-			$fbcomcon_lang = "en_US";
-		}
 		//Check Comments Limit
 		if(get_option('fbcomcon_comments_limit')){
 			$comments_limit = get_option('fbcomcon_comments_limit');

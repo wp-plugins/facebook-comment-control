@@ -25,7 +25,11 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 	
 */
-
+	/**
+	 * Loading localisation
+	 */
+	$plugin_dir = basename(dirname(__FILE__));
+	load_plugin_textdomain('fbcomcon', 'wp-content/plugins/' . $plugin_dir . '/lang', $plugin_dir . '/lang');
 	
 	/**
 	 * Include the Options Page
@@ -61,11 +65,5 @@
 	}
 	if($fbcomcon_userlevel <= $user_level || $user_level == 10){
 		add_action('wp_dashboard_setup', 'fbcomcon_setup');
-
-		/**
-		 * Loading localisation
-		 */
-		$plugin_dir = basename(dirname(__FILE__));
-		load_plugin_textdomain('fbcomcon', 'wp-content/plugins/' . $plugin_dir . '/localizations', $plugin_dir . '/localizations');
 	}
 ?>

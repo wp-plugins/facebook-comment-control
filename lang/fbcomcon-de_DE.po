@@ -1,0 +1,185 @@
+# Translation of the WordPress plugin Facebook Comment Control 0.5 by Marco Scheffel.
+# Copyright (C) 2010 Marco Scheffel
+# This file is distributed under the same license as the Facebook Comment Control package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Facebook Comment Control 0.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/facebook-comment-control\n"
+"POT-Creation-Date: 2010-08-23 18:42+0000\n"
+"PO-Revision-Date: 2010-08-23 22:53+0100\n"
+"Last-Translator: Marco <nagi.b@web.de>\n"
+"Language-Team: Unl3a5h3r <marco.scheffel@gmx.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: fbcomcon_options.php:14
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Sie haben keine ausreichende Berechtigung um diese Seite anzuzeigen."
+
+#: fbcomcon_options.php:19
+msgid "Facobook Comment Control for Wordpress Options"
+msgstr "Facobook Comment Control für Wordpress Einstellungen"
+
+#: fbcomcon_options.php:26
+msgid "General"
+msgstr "Allgemein"
+
+#: fbcomcon_options.php:30
+msgid "Facebook App-ID"
+msgstr "Facebook App-ID"
+
+#: fbcomcon_options.php:34
+msgid "Facebook Secret"
+msgstr "Facebook Secret"
+
+#: fbcomcon_options.php:38
+msgid "Facebook Admin UID"
+msgstr "Facebook Admin UID"
+
+#: fbcomcon_options.php:46
+msgid "Styling"
+msgstr "Aussehen"
+
+#: fbcomcon_options.php:50
+msgid "Layout"
+msgstr "Layout"
+
+#: fbcomcon_options.php:53
+#: fbcomcon_options.php:55
+msgid "Light Style"
+msgstr "Heller Stil"
+
+#: fbcomcon_options.php:54
+msgid "Dark Style"
+msgstr "Dunkler Stil"
+
+#: fbcomcon_options.php:55
+#: fbcomcon_options.php:75
+#: fbcomcon_options.php:84
+#: fbcomcon_options.php:89
+#: fbcomcon_options.php:93
+#: fbcomcon_options.php:97
+#: fbcomcon_options.php:105
+#: fbcomcon_options.php:114
+#: fbcomcon_options.php:123
+msgid "Default"
+msgstr "Standard"
+
+#: fbcomcon_options.php:63
+msgid "Advanced Options"
+msgstr "Fortgeschrittene Einstellungen"
+
+#: fbcomcon_options.php:67
+msgid "Min. userlevel to see FBComCon"
+msgstr "Min. Benutzerrolle um FBComCon anzuzeigen"
+
+#: fbcomcon_options.php:70
+#: fbcomcon_options.php:75
+msgid "Admin"
+msgstr "Administrator"
+
+#: fbcomcon_options.php:71
+msgid "Editor"
+msgstr "Redakteur"
+
+#: fbcomcon_options.php:72
+msgid "Author"
+msgstr "Author"
+
+#: fbcomcon_options.php:73
+msgid "Contributor"
+msgstr "Mitarbeiter"
+
+#: fbcomcon_options.php:74
+msgid "Subscriber"
+msgstr "Abonnent"
+
+#: fbcomcon_options.php:79
+msgid "Language"
+msgstr "Sprache"
+
+#: fbcomcon_options.php:82
+#: fbcomcon_options.php:84
+msgid "English"
+msgstr "Englisch"
+
+#: fbcomcon_options.php:83
+msgid "German"
+msgstr "Deutsch"
+
+#: fbcomcon_options.php:88
+msgid "Custom token (optional)"
+msgstr "Benutzerdefinierter Token (optional)"
+
+#: fbcomcon_options.php:89
+msgid "empty"
+msgstr "leer"
+
+#: fbcomcon_options.php:92
+msgid "Number of comments to display"
+msgstr "Zahl der anzuzeigenden Kommentare"
+
+#: fbcomcon_options.php:93
+msgid "unlimited"
+msgstr "unendlich"
+
+#: fbcomcon_options.php:96
+msgid "Number of Comments per Page"
+msgstr "Zahl der Kommentare pro Seite"
+
+#: fbcomcon_options.php:100
+msgid "Enable Paging"
+msgstr "Seitenverwaltung aktivieren"
+
+#: fbcomcon_options.php:103
+#: fbcomcon_options.php:105
+#: fbcomcon_options.php:112
+#: fbcomcon_options.php:114
+#: fbcomcon_options.php:121
+#: fbcomcon_options.php:123
+msgid "Yes"
+msgstr "Ja"
+
+#: fbcomcon_options.php:104
+#: fbcomcon_options.php:113
+#: fbcomcon_options.php:122
+msgid "No"
+msgstr "Nein"
+
+#: fbcomcon_options.php:109
+msgid "Show Comments Count"
+msgstr "Zahl der Kommentare anzeigen"
+
+#: fbcomcon_options.php:118
+msgid "Show Login Header"
+msgstr "Login Kopfzeile anzeigen"
+
+#: fbcomcon_options.php:146
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#. Plugin Name of the plugin/theme
+msgid "Facebook Comment Control"
+msgstr "Facebook Comment Control"
+
+#. Plugin URI of the plugin/theme
+msgid "http://fbcomcon.mafact.de/"
+msgstr "http://fbcomcon.mafact.de/"
+
+#. Description of the plugin/theme
+msgid "If you have replaced the standart Wordpress comment feature with facebook comments, you can control all facebook-comments on your Dashboard."
+msgstr "Mit Facebook Comment Control können Sie auf dem Wordpress-Dashboard alle Kommentare ihres Blogs verwalten."
+
+#. Author of the plugin/theme
+msgid "Marco Scheffel"
+msgstr "Marco Scheffel"
+
+#. Author URI of the plugin/theme
+msgid "http://www.facebook.com/ms.fb.ger"
+msgstr "http://www.facebook.com/ms.fb.ger"
+

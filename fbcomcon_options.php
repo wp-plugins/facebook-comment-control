@@ -16,7 +16,7 @@
 ?>
 		
 		<div class="wrap">
-			<h2><?php _e('Facobook Comment Control for Wordpress Options','fbcomcon');?></h2>
+			<h2><?php _e('Facebook Comment Control for Wordpress - Options','fbcomcon');?></h2>
 		
 			<form method="post" action="options.php">
 		
@@ -76,15 +76,6 @@
 								</td>
 							</tr>
 							<tr valign="top">
-								<th scope="row"><?php _e('Language','fbcomcon');?></th>
-									<td>
-										<select name="fbcomcon_lang" size="1">
-											<option value="en_US"<?php echo $fbcomcon_lang_en_US_sel;?>><?php _e('English','fbcomcon');?></option>
-											<option value="de_DE"<?php echo $fbcomcon_lang_de_DE_sel;?>><?php _e('German','fbcomcon');?></option>
-										</select> (<?php _e('Default','fbcomcon');?>: <i><?php _e('English','fbcomcon');?></i>)
-									</td>
-							</tr>
-							<tr valign="top">
 								<th scope="row"><?php _e('Custom token (optional)','fbcomcon');?></th>
 								<td><input type="text" name="fbcomcon_custom_token" value="<?php echo get_option('fbcomcon_custom_token');?>" /> (<?php _e('Default','fbcomcon');?>: <i><?php _e('empty','fbcomcon');?></i>)</td>
 							</tr>
@@ -131,7 +122,6 @@
 									fbcomcon_admin_uid,
 									fbcomcon_layout,
 									fbcomcon_userlevel,
-									fbcomcon_lang,
 									fbcomcon_custom_token,
 									fbcomcon_comments_limit,
 									fbcomcon_paging_limit,
