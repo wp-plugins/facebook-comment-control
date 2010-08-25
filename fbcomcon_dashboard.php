@@ -24,40 +24,13 @@
 <?php if(get_option("fbcomcon_layout")=='dark'){
 	echo '<link href="'.get_option("siteurl")."/".PLUGINDIR.'/facebook-comment-control/css/dark_compressed.css" rel="stylesheet" type="text/css" />';
 }?>
-<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery.pajinate-modified.js" type="text/javascript"></script>
 <script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery-latest.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-// Application ID# - enter your application ID# (Not API Key!) //
-var appid = '<?php echo get_option("fbcomcon_app_id");?>';
-
-// Admin ID# - enter your admin ID# (facebook profile id# in numbers, not a name id) //
-var adminid = '<?php echo get_option("fbcomcon_admin_uid");?>';
-
-// Limit - number of comments to dispaly (default is '-1' unlimit [99999999999999999]) //
-var comments_limit = '<?php echo $comments_limit;?>';
-
-// Paging - change to 'false' if you don't want pagging (default is 'true') //
-var paging_comments = '<?php echo $paging_comments;?>';
-
-// Paging Limit - number of comments per page (default is 10) //
-var paging_limit = '<?php echo $paging_limit;?>';
-
-// Count - change to 'false' if you don't want comments count (default is 'true') //
-var comments_count = '<?php echo $comments_count;?>';
-
-// Login header - change to 'false' if you want to hide the login header (default is 'true') //
-var login_header = '<?php echo $login_header;?>';
-
-// Local Date type - change to 'true' if you want the local type (default is 'false') //
-var localdate = 'false';
-</script>
-
+<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery.pajinate-modified.js" type="text/javascript"></script>
 
 <div id="fb-root"></div>
 <script type="text/javascript">
 window.fbAsyncInit = function() {
-	FB.init({appId: ''+appid+'', status: true, cookie: true, xfbml: true});
+	FB.init({appId: '<?php echo get_option("fbcomcon_app_id");?>', status: true, cookie: true, xfbml: true});
 
 	FB.getLoginStatus(function(response) {
 		if (response.session) {
@@ -105,24 +78,28 @@ window.fbAsyncInit = function() {
 
 <script type="text/javascript">
 
-if (login_header == 'false'){
-$(document).ready(function(){
-$('div.login_header').hide();
-});
+if ('<?php echo $login_header;?>' == 'false'){
+	$(document).ready(
+		function(){
+			$('div.login_header').hide();
+		}
+	);
 };
 
-if (comments_count == 'true'){function commentscount(){
-var totalcount = $("div.wallkit_post").size();
-if (totalcount > 0) {
-	$("div.post_counter").text(""+totalcount+" <?php _e('Comments','fbcomcon');?>.");
+if ('<?php echo $comments_count;?>' == 'true'){
+	function commentscount(){
+		var totalcount = $("div.wallkit_post").size();
+		if (totalcount > 0) {
+			$("div.post_counter").text(""+totalcount+" <?php _e('Comments','fbcomcon');?>.");
+		}
+	};
 }
-};}
 
 
 function showComments(start) {
 			start |= 0;
 
-			var per_page = comments_limit;
+			var per_page = '<?php echo $comments_limit;?>';
 			if (per_page == '-1'){var per_page = '99999999999999999'};
 			start *= per_page;
 	
@@ -132,7 +109,7 @@ function showComments(start) {
 				{
 					method: 'fql.multiquery',
 					queries: {
-						comments: 'SELECT fromid, text, id, time, username, xid, object_id FROM comment WHERE xid IN (SELECT xid FROM comments_info WHERE app_id = '+appid+') ORDER BY time desc LIMIT '+start+','+per_page,
+						comments: 'SELECT fromid, text, id, time, username, xid, object_id FROM comment WHERE xid IN (SELECT xid FROM comments_info WHERE app_id = <?php echo get_option("fbcomcon_app_id");?>) ORDER BY time desc LIMIT '+start+','+per_page,
 						users: 'SELECT id, name, url FROM profile WHERE id IN (SELECT fromid FROM #comments)'
 						
 					}
@@ -158,97 +135,77 @@ function showComments(start) {
 						var myDate = new Date( comments[i].time *1000);
 						var comment_date = myDate.toLocaleString();
 
-					// Comment Profile Image and Link
-					var userimg = comments[i].fromid;
-					if(userimg == '1309634065'){
-						var userimg = '<span><img src="http://static.ak.fbcdn.net/rsrc.php/z5HB7/hash/ecyu2wwn.gif" class="img"></span>';
-					}else{
-						var userimg = '<a target="_blank" href="'+ users[comments[i].fromid].url +'" title="'+ users[comments[i].fromid].name +' - <?php _e('view profile','fbcomcon');?>."><img src="https://graph.facebook.com/'+ comments[i].fromid +'/picture" class="img"></a>';
-					}
+						// Comment Profile Image and Link
+						var userimg = comments[i].fromid;
+						if(userimg == '1309634065'){
+							var userimg = '<span><img src="http://static.ak.fbcdn.net/rsrc.php/z5HB7/hash/ecyu2wwn.gif" class="img"></span>';
+						}else{
+							var userimg = '<a target="_blank" href="'+ users[comments[i].fromid].url +'" title="'+ users[comments[i].fromid].name +' - <?php _e('view profile','fbcomcon');?>."><img src="https://graph.facebook.com/'+ comments[i].fromid +'/picture" class="img"></a>';
+						}
 
-					// Comment username and Link
-					var username = comments[i].fromid;
-					if(username == '1309634065'){
-						var username = '<span class="aname">'+ comments[i].username +'</span>';
-					}else{
-						var username = '<a target="_blank" href="'+ users[comments[i].fromid].url +'">'+ users[comments[i].fromid].name +'</a>';
-					}
+						// Comment username and Link
+						var username = comments[i].fromid;
+						if(username == '1309634065'){
+							var username = '<span class="aname">'+ comments[i].username +'</span>';
+						}else{
+							var username = '<a target="_blank" href="'+ users[comments[i].fromid].url +'">'+ users[comments[i].fromid].name +'</a>';
+						}
 
-					// Comment Date and Time
-					var commentdate = new Date(comments[i].time*1000);
-					var curr_date = commentdate.getDate();
-					var curr_month = commentdate.getMonth();
-					curr_month++;
-					var curr_year = commentdate.getFullYear();
-					var a_p = "";
-					var curr_hour = commentdate.getHours();
-					if (curr_hour < 12){a_p = "AM";}else{a_p = "PM";}if (curr_hour == 0){curr_hour = 12;}if (curr_hour > 12){curr_hour = curr_hour - 12;}
-					
-					var curr_min = commentdate.getMinutes();
-					if(curr_min < 10){
-						curr_min = '0' + curr_min;
-					}
-					commentdate = curr_date + "." + curr_month + "." + curr_year + " <?php _e('at','fbcomcon');?> " + curr_hour + ":" + curr_min + " " + a_p;
-					
-					if (localdate == 'true'){var commentdate = comment_date};
+						// Comment Date and Time
+						var commentdate = comment_date;
 
-					// Comment BODY text
-					var commenttext = comments[i].text;
-					var commenttext = commenttext.replace(/\n/g,'<br />');
-					
-					// Comments Message Link
-					var commentmessage = comments[i].fromid;
-					if(commentmessage != '1309634065' && commentmessage != <?php echo $logged_in_uid;?> ){
-						var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="<?php _e('Message','fbcomcon');?>"><?php _e('Message','fbcomcon');?></a> | ' ;
-					}
-					else{
-						commentmessage = '';
-					}
+						// Comment BODY text
+						var commenttext = comments[i].text;
+						var commenttext = commenttext.replace(/\n/g,'<br />');
+						
+						// Comments Message Link
+						var commentmessage = comments[i].fromid;
+						if(commentmessage != '1309634065' && commentmessage != <?php echo $logged_in_uid;?> ){
+							var commentmessage = '<a href="http://www.facebook.com/inbox/?compose&id='+ users[comments[i].fromid].id + '" class="message" target="_blank" title="<?php _e('Message','fbcomcon');?>"><?php _e('Message','fbcomcon');?></a> | ' ;
+						}
+						else{
+							commentmessage = '';
+						}
 
-					// Comments Delete Link
-					<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
-						echo "var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">". __('Delete','fbcomcon') ."</a> &nbsp;|&nbsp; ';";
-					}
-					else{ echo "var commentdelete = ''";}?>
+						// Comments Delete Link
+						<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
+							echo "var commentdelete = '<a href=\"#\" onclick=\"deleteComment(\\''+comments[i].id+'\\',\\''+comments[i].xid+'\\'); return false;\" class=\"delete\" title=\"Delete\">". __('Delete','fbcomcon') ."</a> &nbsp;|&nbsp; ';";
+						}
+						else{ echo "var commentdelete = ''";}?>
 
-					// Comment URL Link
-					var commenturl = comments[i].xid;
-					if(commenturl.substr(0,4) == 'http') {
-						var commenturl = '<a href="'+unescape(comments[i].xid)+'" target="_blank"><?php _e("View Page");?></a>';
-					}
-					
-					//Creating Content
-					data +=
-					'<div id="post_'+ comments[i].xid +'_'+ comments[i].id +'" class="wallkit_post">'+
-					'<div class="wallkit_profilepic">'+ userimg +'</div>'+
-					'<div class="wallkit_postcontent">'+
-					'<h4>'+ username +
-					'<span class="wall_time">'+ commentdate +'</span></h4>'+
-					'<div>'+ commenttext +'</div>'+
-					'<div class="wallkit_actionset">'+
-					''+ commentmessage +
-					''+ commentdelete +
-					''+ commenturl +
-					'</div>'+
-					'</div>'+
-					'</div>';
+						// Comment URL Link
+						var commenturl = comments[i].xid;
+						if(commenturl.substr(0,4) == 'http') {
+							var commenturl = '<a href="'+unescape(comments[i].xid)+'" target="_blank"><?php _e("View Page");?></a>';
+						}
+						
+						//Creating Content
+						data +=
+						'<div id="post_'+ comments[i].xid +'_'+ comments[i].id +'" class="wallkit_post">'+
+						'<div class="wallkit_profilepic">'+ userimg +'</div>'+
+						'<div class="wallkit_postcontent">'+
+						'<h4>'+ username +
+						'<span class="wall_time">'+ commentdate +'</span></h4>'+
+						'<div>'+ commenttext +'</div>'+
+						'<div class="wallkit_actionset">'+
+						''+ commentmessage +
+						''+ commentdelete +
+						''+ commenturl +
+						'</div>'+
+						'</div>'+
+						'</div>';
 					}
 					
-
 					$('#fbcomments').html('<div class="wallkit_posts">' + data + '</div>');
-					if (paging_comments == 'true'){
+					if ('<?php echo $paging_comments;?>' == 'true' || '<?php echo $comments_count;?>' == 'true'){
 					$('div.wallkit_posts').before('<div class="wallkit_subtitle"><div class="post_counter"></div></div>');
 					$('div.wallkit_posts').after('<div class="wallkit_subtitle"><div class="post_counter"></div></div>');
 					}
-					else if (comments_count == 'true'){
-					$('div.wallkit_posts').before('<div class="wallkit_subtitle"><div class="post_counter"></div></div>');
-					$('div.wallkit_posts').after('<div class="wallkit_subtitle"><div class="post_counter"></div></div>');
-					};
-					if (paging_comments == 'true'){
+					if ('<?php echo $paging_comments;?>' == 'true'){
 					$('div.wallkit_subtitle').prepend('<div class="pager"><ul class="pagerpro"></ul></div>');
-					$('div.comment_body').pajinate({items_per_page : ''+paging_limit+''});
+					$('div.comment_body').pajinate({items_per_page : '<?php echo $paging_limit;?>'});
 					};
-					if (comments_count == 'true'){commentscount();};
+					if ('<?php echo $comments_count;?>' == 'true'){commentscount();};
 				}
 			);
 		}

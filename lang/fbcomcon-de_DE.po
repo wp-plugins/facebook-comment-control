@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Facebook Comment Control 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/facebook-comment-control\n"
-"POT-Creation-Date: 2010-08-23 21:35+0000\n"
-"PO-Revision-Date: 2010-08-23 23:36+0100\n"
+"POT-Creation-Date: 2010-08-25 09:24+0000\n"
+"PO-Revision-Date: 2010-08-25 11:24+0100\n"
 "Last-Translator: Marco <nagi.b@web.de>\n"
 "Language-Team: Unl3a5h3r <marco.scheffel@gmx.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,55 +17,59 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 
-#: fbcomcon_dashboard.php:87
+#: fbcomcon_dashboard.php:68
 msgid "Logged in as"
 msgstr "Eingeloggt als"
 
-#: fbcomcon_dashboard.php:120
+#: fbcomcon_dashboard.php:101
 msgid "Login"
 msgstr "Einloggen"
 
-#: fbcomcon_dashboard.php:120
+#: fbcomcon_dashboard.php:101
 msgid "Logout"
 msgstr "Ausloggen"
 
-#: fbcomcon_dashboard.php:136
+#: fbcomcon_dashboard.php:117
 msgid "Comments"
 msgstr "Kommentare"
 
-#: fbcomcon_dashboard.php:168
+#: fbcomcon_dashboard.php:149
 msgid "No comments"
 msgstr "Keine Kommentare"
 
-#: fbcomcon_dashboard.php:185
+#: fbcomcon_dashboard.php:166
 msgid "view profile"
 msgstr "Profil anschauen"
 
-#: fbcomcon_dashboard.php:210
+#: fbcomcon_dashboard.php:191
 msgid "at"
 msgstr "um"
 
-#: fbcomcon_dashboard.php:221
+#: fbcomcon_dashboard.php:202
 msgid "Message"
 msgstr "Nachricht senden"
 
-#: fbcomcon_dashboard.php:229
+#: fbcomcon_dashboard.php:210
 msgid "Delete"
 msgstr "Löschen"
 
-#: fbcomcon_dashboard.php:302
+#: fbcomcon_dashboard.php:217
+msgid "View Page"
+msgstr "Seite anzeigen"
+
+#: fbcomcon_dashboard.php:269
 msgid "Loading..."
 msgstr "Laden..."
 
-#: fbcomcon_dashboard.php:309
+#: fbcomcon_dashboard.php:276
 msgid "Delete Comment"
 msgstr "Kommentar löschen"
 
-#: fbcomcon_dashboard.php:319
+#: fbcomcon_dashboard.php:286
 msgid "ERROR: Failed to delete comment, please try again."
 msgstr "FEHLER: Kommentar konnte nicht gelöscht werden. Bitte erneut versuchen."
 
-#: fbcomcon_dashboard.php:321
+#: fbcomcon_dashboard.php:288
 msgid "Comment Successfully Deleted"
 msgstr "Kommentar erfolgreich gelöscht"
 

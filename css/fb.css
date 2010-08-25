@@ -363,7 +363,7 @@ Path: css/bwgy0uih1y8g8cgo.pkg.css
 #fbcomcon .wallkit_post div.wallkit_actionset{font-size:9px;padding-bottom:3px}
 #fbcomcon .wallkit_title{font-size:16px;font-weight:bold;overflow:hidden}
 #fbcomcon .wallkit_title div.title_left{float:left}
-#fbcomcon .wallkit_subtitle{padding:3px 5px 2px 0;font-size:11px;font-weight:normal}
+#fbcomcon .wallkit_subtitle{font-size:11px;font-weight:normal;margin-bottom:10px;text-align:right;}
 #fbcomcon .wallkit_form{padding:5px 10px 5px 0}
 #fbcomcon .wallkit_form .editsettings{float:right;margin:5px}
 #fbcomcon .wallkit_form .inputtext{display:block;margin:5px 0 5px 0}
@@ -394,9 +394,8 @@ Path: css/bwgy0uih1y8g8cgo.pkg.css
 #fbcomcon .wallkit_form .show_connected .connect_area{display:none}
 #fbcomcon .wallkit_form .show_connected .not_connected{display:none}
 #fbcomcon .wallkit_form .show_not_connected .connected{display:none}
-#fbcomcon .wallkit_subtitle .subtitle_left{float:left;overflow:visible;width:150px}
-#fbcomcon .wallkit_subtitle .pager{float:right}
-#fbcomcon .wallkit_subtitle .post_counter{float:right;margin:0 5px}
+#fbcomcon .wallkit_subtitle .pager{display:inline;}
+#fbcomcon .wallkit_subtitle .post_counter{display:inline;margin:0 5px;}
 #fbcomcon .wallkit_subtitle .subtitle_action{display:inline;float:right}
 #fbcomcon div.wallkit_subtitle div.subtitle_right .left{float:right}
 #fbcomcon .wallkit_subtitle span.pipe{float:right}
@@ -474,8 +473,7 @@ Path: css/bbg3fq0osdkosk8k.pkg.css
 #fbcomcon #album.photosearch h3{float:left}
 #fbcomcon #album.photosearch .withmore{text-align:right}
 #fbcomcon #album .quickselect{text-align:right}
-#fbcomcon .pagerpro_container{float:right;margin:0 0 0 0;padding:3px 0 4px 0;width:200px}
-#fbcomcon .pagerpro{float:right}
+#fbcomcon .pagerpro{display:inline;}
 #fbcomcon .pagerpro .pagerpro_li{display:inline}
 #fbcomcon .pagerpro .pagerpro_a{padding:3px;padding-bottom:2px}
 #fbcomcon .pagerpro .pagerpro_a:hover{background-color:#3b5998;border-color:#d8dfea;border-bottom:1px solid #3b5998;color:#fff;text-decoration:none}

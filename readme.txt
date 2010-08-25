@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 2.7
 Tested up to: 3.1
-Stable tag: 0.6
+Stable tag: 0.7
 
 You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
@@ -56,6 +56,11 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+= 0.7 =
+* Bugfixing
+* Link to Comment page now via unescape() => Should speed things up for blogs with many articles
+* Cleaned some useless css code
+
 = 0.6 =
 * Added localization
 * Minor bugfixung
@@ -107,6 +112,9 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 
 == Upgrade Notice ==
+= 0.7 =
+Important bugfixing. Please update
+
 = 0.6 =
 Finally true localization. Feel free to send me new .mo files (French,...)
 
@@ -129,3 +137,4 @@ NOTE: The following are all issues with the Facebook library itself. They are ou
 
 * More localization (need help here, please contact me)
 * More styling
+* Sidebar widget to show recent comments (This will be v1.0)
