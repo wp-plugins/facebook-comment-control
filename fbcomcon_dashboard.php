@@ -16,35 +16,16 @@
 	$logged_in_uid = ereg_replace("[^0-9]", "", $logged_in_uid);
 	
 	include_once('check_options.php');
-			
-	/*  getting post data into java variable
-	 *  Used for direct link
-	 */
 
-
-	$content = '';
-	$count_foreach = 1;
-	$myposts = get_posts('numberposts=-1');
-	foreach($myposts as $post){
-		$content .= '"'.$post->ID.'","'.get_permalink($post->ID).'","'.urlencode(get_permalink($post->ID)).'","'.$post->post_title.'",';
-		$count_foreach++;
-	}
-	$myposts = get_pages('numberposts=-1');
-	foreach($myposts as $pagg){
-		$content .= '"'.$pagg->ID.'","'.get_page_link($pagg->ID).'","'.urlencode(get_page_link($pagg->ID)).'","'.$pagg->post_title.'",';
-		$count_foreach++;
-	}
-	$content = substr($content, 0, -1);
 ?>
-<script type="text/javascript">
-	var postdata = [<?php echo $content;?>];
-</script>
+
 
 <link href="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/css/compressed.css" rel="stylesheet" type="text/css"/>
 <?php if(get_option("fbcomcon_layout")=='dark'){
 	echo '<link href="'.get_option("siteurl")."/".PLUGINDIR.'/facebook-comment-control/css/dark_compressed.css" rel="stylesheet" type="text/css" />';
 }?>
-<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/compressed.js" type="text/javascript"></script>
+<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery.pajinate-modified.js" type="text/javascript"></script>
+<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery-latest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 // Application ID# - enter your application ID# (Not API Key!) //
@@ -232,22 +213,8 @@ function showComments(start) {
 
 					// Comment URL Link
 					var commenturl = comments[i].xid;
-					var count_foreach = 1;
-					var count_arr = 0;
-					var post_id = '';
-					var post_url = '';
-					var post_enc_url = '';
-					var post_title = '';
-					while (count_foreach <= <?php echo $count_foreach;?>){
-						var post_id = count_arr;
-						var post_url = count_arr+1;
-						var post_enc_url = count_arr+2;
-						var post_title = count_arr+3;
-						if (commenturl == postdata[post_id] || commenturl == postdata[post_enc_url]){
-							var commenturl = '<a href="'+postdata[post_url]+'" target="_blank">'+postdata[post_title]+'</a>';
-						}
-						count_foreach++;
-						count_arr = count_arr+4;
+					if(commenturl.substr(0,4) == 'http') {
+						var commenturl = '<a href="'+unescape(comments[i].xid)+'" target="_blank"><?php _e("View Page");?></a>';
 					}
 					
 					//Creating Content
