@@ -19,14 +19,6 @@
 
 ?>
 
-
-<link href="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/css/compressed.css" rel="stylesheet" type="text/css"/>
-<?php if(get_option("fbcomcon_layout")=='dark'){
-	echo '<link href="'.get_option("siteurl")."/".PLUGINDIR.'/facebook-comment-control/css/dark_compressed.css" rel="stylesheet" type="text/css" />';
-}?>
-<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery-latest.min.js" type="text/javascript"></script>
-<script src="<?php echo get_option("siteurl")."/".PLUGINDIR;?>/facebook-comment-control/js/jquery.pajinate-modified.js" type="text/javascript"></script>
-
 <div id="fb-root"></div>
 <script type="text/javascript">
 window.fbAsyncInit = function() {

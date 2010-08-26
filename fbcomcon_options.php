@@ -43,23 +43,6 @@
 				</div>
 		
 				<div id="poststuff" class="postbox">
-					<h3><?php _e('Styling','fbcomcon');?></h3>
-					<div class="inside">
-						<table class="form-table">
-							<tr valign="top">
-								<th scope="row"><?php _e('Layout','fbcomcon');?></th>
-								<td>
-									<select name="fbcomcon_layout" size="1">
-										<option value="light"<?php echo $fbcomcon_layout_light_sel;?>><?php _e('Light Style','fbcomcon');?></option>
-										<option value="dark"<?php echo $fbcomcon_layout_dark_sel;?>><?php _e('Dark Style','fbcomcon');?></option>
-									</select> (<?php _e('Default','fbcomcon');?>: <i><?php _e('Light Style','fbcomcon');?></i>)
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-		
-				<div id="poststuff" class="postbox">
 					<h3><?php _e('Advanced Options','fbcomcon');?></h3>
 					<div class="inside">
 						<table class="form-table">
@@ -120,7 +103,6 @@
 							value="	fbcomcon_app_id,
 									fbcomcon_secret,
 									fbcomcon_admin_uid,
-									fbcomcon_layout,
 									fbcomcon_userlevel,
 									fbcomcon_custom_token,
 									fbcomcon_comments_limit,

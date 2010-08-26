@@ -1,12 +1,6 @@
 <?php
 	//check if there are already options set, otherwise: Default
-		//Check Layout
-		if(get_option('fbcomcon_layout')=='dark'){
-			$fbcomcon_layout_dark_sel = ' selected';
-		}
-		else{
-			$fbcomcon_layout_light_sel = ' selected';
-		}
+
 		//Check Userlevel
 		if(get_option('fbcomcon_userlevel')){
 			$fbcomcon_userlevel= get_option('fbcomcon_userlevel');
