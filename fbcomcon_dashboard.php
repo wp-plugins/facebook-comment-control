@@ -132,9 +132,7 @@ function showComments(start) {
 					}
 			
 					for (i=0;i<comments.length;i++) {
-						var myDate = new Date( comments[i].time *1000);
-						var comment_date = myDate.toLocaleString();
-
+						
 						// Comment Profile Image and Link
 						var userimg = comments[i].fromid;
 						if(userimg == '1309634065'){
@@ -152,7 +150,14 @@ function showComments(start) {
 						}
 
 						// Comment Date and Time
-						var commentdate = comment_date;
+						var commentdate = new Date( comments[i].time *1000);
+						var curr_date = commentdate.getDate();
+						var curr_month = commentdate.getMonth();
+						curr_month++;
+						var curr_year = commentdate.getFullYear();
+						var curr_hour = commentdate.getHours();
+						var curr_min = commentdate.getMinutes();
+						commentdate = curr_date + "." + curr_month + "." + curr_year + " <?php _e('at','fbcomcon');?> " + curr_hour + ":" + curr_min;
 
 						// Comment BODY text
 						var commenttext = comments[i].text;

@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 2.7
 Tested up to: 3.1
-Stable tag: 0.7
+Stable tag: 1.0
 
 You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
@@ -20,11 +20,9 @@ You have replaced the default Wordpress comments template with the Facebook fb:c
 * See who posted the comments
 * Display the overview for specific roles only
 * Write a message to the commentator
+* Add a sidebar widget with the last 5 comments
 
-= What the plugin cannot do (To-Do-List): =
-* Let you comment
-
-Special thanks go to: Gil Goldshlager, 'pingflood' & 'TH_Wesley  from the Facebook developers forum
+Special thanks go to: Gil Goldshlager, 'pingflood' & 'TH_Wesley'  from the Facebook developers forum
 
 == Installation ==
 
@@ -56,6 +54,10 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+= 1.0 =
+* New sidebar widget with last 5 posts
+* Some bugfixes
+
 = 0.7 =
 * Bugfixing
 * Link to Comment page now via unescape() => Should speed things up for blogs with many articles
@@ -112,6 +114,9 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 
 == Upgrade Notice ==
+= 1.0 =
+New sidebar widget to show recent comments. More configurations options will follow
+
 = 0.7 =
 Important bugfixing. Please update
 
@@ -132,9 +137,10 @@ Paging now works thanks to Gil
 NOTE: The following are all issues with the Facebook library itself. They are out of my control.
 
 * The Facebook API has no 'block user' method so I cannot add it
+* Comments can only be fetched for users that are logged in to facebook and have connected with your app. Therefor recent comments can only be shown for those users.
 
 == Upcoming Features ==
 
 * More localization (need help here, please contact me)
 * More styling
-* Sidebar widget to show recent comments (This will be v1.0)
+* More configuration options to the sidebar widget

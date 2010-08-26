@@ -4,7 +4,7 @@
 	Plugin Name: Facebook Comment Control
 	Plugin URI: http://fbcomcon.mafact.de/
 	Description: If you have replaced the standart Wordpress comment feature with facebook comments, you can control all facebook-comments on your Dashboard.
-	Version: 0.7
+	Version: 1.0
 	Author: Marco Scheffel
 	Author URI: http://www.facebook.com/ms.fb.ger
 	License: GPLv2
@@ -25,6 +25,9 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 	
 */
+
+/* GENERAL */
+
 	/**
 	 * Loading localisation
 	 */
@@ -35,7 +38,10 @@
 	 * Include the Options Page
 	 */
 	include_once('fbcomcon_options.php');
+
 	
+/* DASHBOARD WIDGET */	
+
 	/**
 	 * Content of Dashboard-Widget
 	 */
@@ -45,14 +51,14 @@
 	}
 	 
 	/**
-	 * add Dashboard Widget via function wp_add_dashboard_widget()
+	 * Add Dashboard Widget via function wp_add_dashboard_widget()
 	 */
 	function fbcomcon_setup() {
 		wp_add_dashboard_widget( 'fbcomcon', 'Facebook Comment Control', 'fbcomcon_dashboard' );
 	}
 	 
 	/**
-	 * use hook, to integrate new widget
+	 * Use hook, to integrate new dasboard widget
 	 * Adds Widget only for users equal or higher the set options
 	 */
 	 
@@ -66,4 +72,32 @@
 	if($fbcomcon_userlevel <= $user_level || $user_level == 10){
 		add_action('wp_dashboard_setup', 'fbcomcon_setup');
 	}
+	/**
+	 * 
+
+	 
+/* SIDEBAR WIDGET */		 
+
+	/**
+	 * Add Dashboard Widget via function wp_register_sidebar_widget()
+	 */
+	function fbcomcon_sidebar_register() {
+	
+		function fbcomcon_sidebar_widget($args) {
+		
+			extract($args);
+			echo $before_widget;
+			include_once('fbcomcon_dashboard.php');
+			echo $after_widget;
+			
+		}
+		
+		wp_register_sidebar_widget( 'fbcomcon', 'Facebook Comment Control', 'fbcomcon_sidebar_widget'); 
+	}
+	
+	/**
+	 * Use hook, to integrate new sidebar widget
+	 */
+	
+	add_action('init', 'fbcomcon_sidebar_register');
 ?>
