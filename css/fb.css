@@ -8,9 +8,9 @@ Path: css/2fgssmmgmw4k0w8c.pkg.css
 
 
 #fbcomcon .auto_resize_iframe{height:auto}
-#fbcomcon h1, h2, h3, h4, h5, h6{font-size:13px;color:#333;margin:0;padding:0}
+#fbcomcon h1, #fbcomcon h2, #fbcomcon h3, #fbcomcon h4, #fbcomcon h5, #fbcomcon h6{font-size:13px;color:#333;margin:0;padding:0}
 #fbcomcon h1{font-size:14px}
-#fbcomcon h4, h5{font-size:11px}
+#fbcomcon h4, #fbcomcon h5{font-size:11px}
 #fbcomcon a{cursor:pointer;color:#3b5998;-moz-outline-style:none;text-decoration:none}
 #fbcomcon a:hover{text-decoration:underline}
 #fbcomcon img{border:0}
@@ -28,7 +28,7 @@ Path: css/2fgssmmgmw4k0w8c.pkg.css
 #fbcomcon #facebook .invisible_elem{visibility:hidden}
 #fbcomcon #facebook .aural{width:0;height:0;display:block;margin-left:-5000px;overflow:hidden}
 #fbcomcon #content{width:auto;padding:0;margin:0}
-#fbcomcon .profile #content, .home #content, .search #content{min-height:600px}
+#fbcomcon .profile #content, #fbcomcon .home #content, #fbcomcon .search #content{min-height:600px}
 #fbcomcon .UIPage_LoggedOut .UIFullPage_Container{padding-top:26px}
 #fbcomcon .UIPage_LoggedOut .UIStandardFrame_Container{padding-top:26px}
 #fbcomcon .UIStandardFrame_Container{width:960px;padding:22px 0 0 20px;margin:0 auto}
@@ -52,7 +52,7 @@ Path: css/2fgssmmgmw4k0w8c.pkg.css
 #fbcomcon .formtable td.label{color:#666;font-weight:bold;padding-right:10px}
 #fbcomcon .formtable .tallrow{vertical-align:top}
 #fbcomcon .formbuttons{text-align:center;margin:10px 10px}
-#fbcomcon .formbuttons .inputsubmit, .formbuttons .inputbutton{margin:2px 4px}
+#fbcomcon .formbuttons .inputsubmit, #fbcomcon .formbuttons .inputbutton{margin:2px 4px}
 #fbcomcon textarea,
 #fbcomcon .inputtext,
 #fbcomcon .inputpassword{border:1px solid #bdc7d8;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;padding:3px}
@@ -98,7 +98,7 @@ Path: css/2fgssmmgmw4k0w8c.pkg.css
 #fbcomcon .text_align_rtl{text-align:right}
 #fbcomcon .transparent_png{_background-image:none;_display:inline;_zoom:1}
 #fbcomcon .invisible_png{_visibility:hidden}
-#fbcomcon .highlight, .inserted{_line-height:17px}
+#fbcomcon .highlight, #fbcomcon .inserted{_line-height:17px}
 #fbcomcon #jewelCase{left:97px;position:absolute;bottom:0;_bottom:-1px;width:84px}
 #fbcomcon #jewelCase .jewel{border:1px solid #3b5998;border-bottom:0;float:left;height:31px;margin:13px -1px 0 0;position:relative;width:24px}
 #fbcomcon #jewelCase .openToggler{border-color:#333;height:30px;margin-top:14px;z-index:2}
@@ -554,23 +554,23 @@ Path: css/bbg3fq0osdkosk8k.pkg.css
 #fbcomcon #rightcolumn .share_and_hide{padding-left:2px;padding-bottom:10px}
 #fbcomcon .footer #photoactions{clear:right;padding-top:2px;margin-bottom:20px }
 #fbcomcon #photoactions a{border-bottom:1px solid #d8dfea}
-#fbcomcon #photoactions a, #photoactions .action_link{display:block;clear:both;padding:2px 3px}
-#fbcomcon #photoactions a:hover, #photoactions .action_link:hover{text-decoration:none;background:#3b5998;color:#fff}
-#fbcomcon #rotateleft, #rotateright{cursor:pointer;width:30px;float:left;position:relative}
+#fbcomcon #photoactions a, #fbcomcon #photoactions .action_link{display:block;clear:both;padding:2px 3px}
+#fbcomcon #photoactions a:hover, #fbcomcon #photoactions .action_link:hover{text-decoration:none;background:#3b5998;color:#fff}
+#fbcomcon #rotateleft, #fbcomcon #rotateright{cursor:pointer;width:30px;float:left;position:relative}
 #fbcomcon #rotateright{text-align:right}
 #fbcomcon #rotateleft a{background:white url(/rsrc.php/z1W00/hash/77xbrdqq.gif) no-repeat 2px 2px;height:26px;border-bottom:1px solid #fff}
 #fbcomcon #rotateleft a:hover{background:#3B5998 url(/rsrc.php/zA5O3/hash/30mqq6w4.gif) no-repeat 2px 2px}
 #fbcomcon #rotateright a{height:26px;background:white url(/rsrc.php/zDBQC/hash/b9tx15nc.gif) no-repeat 3px 2px;border-bottom:1px solid #fff}
 #fbcomcon #rotateright a:hover{background:#3B5998 url(/rsrc.php/z4S98/hash/32tkbaza.gif) no-repeat 3px 2px}
-#fbcomcon #rotateleft a:hover, #rotateright a:hover{text-decoration:none;color:#fff}
+#fbcomcon #rotateleft a:hover, #fbcomcon #rotateright a:hover{text-decoration:none;color:#fff}
 #fbcomcon #convertmobile{padding:10px 10px 0;text-align:center;width:300px}
 #fbcomcon #convertmobile h4{text-align:center}
 #fbcomcon #convertmobile p{font-size:11px;text-align:center}
 #fbcomcon .movephoto select{width:117px}
 #fbcomcon .editalbum.newalbum #newalbum{padding:20px 0 20px 0}
 #fbcomcon .editalbum .tab_bar{margin:0 0 10px}
-#fbcomcon #newalbum .inputtext, #newalbum textarea{width:250px}
-#fbcomcon #newalbum .inputsubmit, #newalbum .inputbutton{width:auto;margin-top:15px}
+#fbcomcon #newalbum .inputtext, #fbcomcon #newalbum textarea{width:250px}
+#fbcomcon #newalbum .inputsubmit, #fbcomcon #newalbum .inputbutton{width:auto;margin-top:15px}
 #fbcomcon #files div{margin:5px 0 8px 0}
 #fbcomcon #uploading{margin:20px auto;width:400px}
 #fbcomcon #noactive{margin:15px 0 0 0;text-align:center}
@@ -584,9 +584,9 @@ Path: css/bbg3fq0osdkosk8k.pkg.css
 #fbcomcon #frame{width:62px;height:62px;position:absolute;cursor:crosshair;background:url(/rsrc.php/z5P2G/hash/95xhalsq.gif) left top}
 #fbcomcon .photosearch .photo_table{margin-bottom:20px;border:1px solid #bbb;background:#f7f7f7;overflow:hidden;position:relative}
 #fbcomcon .photosearch .photo_table.photo_table_last{margin-bottom:0}
-#fbcomcon #ieinstallation, #canceledactivex{margin:0 20px}
+#fbcomcon #ieinstallation, #fbcomcon #canceledactivex{margin:0 20px}
 #fbcomcon .status_holder{padding:10px 0 0;margin:0 0 10px}
-#fbcomcon .status_holder_album, .status_holder_photo{padding:10px 0 0;margin:0}
+#fbcomcon .status_holder_album, #fbcomcon .status_holder_photo{padding:10px 0 0;margin:0}
 #fbcomcon .status_holder .status,
 #fbcomcon .status_holder #error{margin-bottom:0}
 #fbcomcon #tagging_instructions{margin:0 0 10px 0;padding:10px;border:solid 1px #ffe222;background:#fffbe2}
