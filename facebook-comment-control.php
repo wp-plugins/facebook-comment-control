@@ -4,7 +4,7 @@
 	Plugin Name: Facebook Comment Control
 	Plugin URI: http://fbcomcon.mafact.de/
 	Description: If you have replaced the standart Wordpress comment feature with facebook comments, you can control all facebook-comments on your Dashboard.
-	Version: 1.2
+	Version: 1.2.1
 	Author: Marco Scheffel
 	Author URI: http://www.facebook.com/ms.fb.ger
 	License: GPLv2
