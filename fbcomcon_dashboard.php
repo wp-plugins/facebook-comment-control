@@ -1,11 +1,11 @@
 <?php
 
 	//do not touch - Access Token
-    if(!get_option('manual_token')){
-		$access_token = substr(file_get_contents('https://graph.facebook.com/oauth/access_token?type=client_cred&client_id='.get_option('fbcomcon_app_id').'&client_secret='.get_option('fbcomcon_secret')), 13);
+    if(get_option('fbcomcon_custom_token') != ''){
+		$access_token = get_option('fbcomcon_custom_token');
 	}
 	else{
-		$access_token = get_option('fbcomcon_custom_token');
+		$access_token = substr(file_get_contents('https://graph.facebook.com/oauth/access_token?type=client_cred&client_id='.get_option('fbcomcon_app_id').'&client_secret='.get_option('fbcomcon_secret')), 13);
 	}
 	
 	//get uid from cookie

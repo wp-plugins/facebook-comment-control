@@ -124,28 +124,7 @@ function showComments() {
 			$('#fbcomments').html('<img src="http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif" title="<?php _e('Loading...','fbcomcon');?>" alt="<?php _e('Loading...','fbcomcon');?>" style="width:32px; height:32px; display:block; margin:50px auto;">');
 			showComments(0);
 		}
-		
-		<?php if ($logged_in_uid == get_option("fbcomcon_admin_uid")){
-			echo "
-				function deleteComment(commentid,commentxid) {
-					if (!confirm('". __('Delete Comment','fbcomcon') ."?')) return false;
 
-					FB.api({
-						method: 'comments.remove',
-						comment_id: commentid,
-						xid: commentxid,
-						access_token: '".$access_token."'
-					},
-					function(response) {
-						if (!response || response.error_code) {
-							alert(\"". __('ERROR: Failed to delete comment, please try again.','fbcomcon') ."\");
-						} else {
-							alert('". __('Comment Successfully Deleted','fbcomcon') ."');
-							$(\"#post_\"+commentxid+\"_\"+commentid).slideUp(500, this.remove);
-						}
-					});
-				}";
-			}?>
 // Retrieve Facebook Comments code by Gil Goldshlager
 // http://facebook.com/gil.goldshlager
 // Thanks to 'pingflood' & 'TH_Wesley' from the Facebook developers forum
