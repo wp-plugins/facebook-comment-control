@@ -126,5 +126,7 @@
 				<input type="image" src="<?php echo get_option( "siteurl" ).'/'.PLUGINDIR.'/facebook-comment-control/img/donate.jpg';?>" border="0" name="submit" alt="Buy me a beer">
 				<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 			</form>
+			Plugin Homepage: <a href="http://fblico.mafact.de/">Facebook Like Count</a><br/>
+			Plugin Author: <a href="http://www.facebook.com/ms.fb.ger">Marco Scheffel</a>
 		</div>
 	<?php } ?>
