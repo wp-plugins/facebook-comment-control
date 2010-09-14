@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: Unl3a5h3r
-Special thanks to: Gil Goldshlager, 'pingflood' & 'TH_Wesley
+Special thanks to: Gil Goldshlager, 'pingflood' & 'TH_Wesley'
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N6E42VW26QD66
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.4
+Stable tag: 2.0
 
 You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
@@ -14,7 +14,7 @@ You have replaced the default Wordpress comments template with the Facebook fb:c
 You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
 = What the Plugin can do: =
-* List all comments on your blog with dashboard widget
+* List all comments on your blog on your dashboard
 * Delete comments
 * See where the comments were posted
 * See who posted the comments
@@ -54,6 +54,10 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+= 2.0 =
+* fbcomcon runs in an iframe now grants compatibility with Facebook Like Count (my other plugin)
+* lots of bugfixes
+
 = 1.4 =
 * deleted some useless *** from the facebook css part
 
@@ -131,6 +135,9 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 
 == Upgrade Notice ==
+= 2.0 =
+Please update. Dashboard widget now runs in an iframe to grant compatibility with <a href="http://fblico.mafact.de/">Facebook Like Count</a> or other javascript widgets.
+
 = 1.3 =
 Have notices some css bug. So please update immediately
 
