@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 2.0
+Stable tag: 2.1
 
 You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
 
@@ -54,6 +54,9 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 1. settings page
 
 == Changelog ==
+= 2.1 =
+* bugfix for windows servers
+
 = 2.0 =
 * fbcomcon runs in an iframe now grants compatibility with Facebook Like Count (my other plugin)
 * lots of bugfixes
@@ -135,6 +138,9 @@ Go to Facebook -> Developers app -> Edit my apps -> edit 'the app for your blog'
 
 
 == Upgrade Notice ==
+= 2.1 =
+Plugin was bugged on windows servers. So please update.
+
 = 2.0 =
 Please update. Dashboard widget now runs in an iframe to grant compatibility with <a href="http://fblico.mafact.de/">Facebook Like Count</a> or other javascript widgets.
 
