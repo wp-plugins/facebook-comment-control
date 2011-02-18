@@ -5,24 +5,13 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: comments, spam, facebook, social plugin, social network
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 2.1
+Stable tag: 2.2
 
-You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
+Development stopped
 
 == Description ==
 
-You have replaced the default Wordpress comments template with the Facebook fb:comments? Then this plugin is what you need!
-
-= What the Plugin can do: =
-* List all comments on your blog on your dashboard
-* Delete comments
-* See where the comments were posted
-* See who posted the comments
-* Display the overview for specific roles only
-* Write a message to the commentator
-* Add a sidebar widget with the last 5 comments
-
-Special thanks go to: Gil Goldshlager, 'pingflood' & 'TH_Wesley'  from the Facebook developers forum
+Development stopped
 
 == Installation ==
 
